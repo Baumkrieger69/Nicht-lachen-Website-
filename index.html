@@ -1,0 +1,4604 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicht Lachen Challenge</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c, #4facfe, #00f2fe);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            min-height: 100vh;
+            color: #2c3e50;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes heartBeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.3);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            70% {
+                transform: scale(0.9);
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Neue Animationen */
+        @keyframes neonGlow {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(102, 126, 234, 0.3), 0 0 40px rgba(102, 126, 234, 0.1);
+            }
+            50% {
+                box-shadow: 0 0 30px rgba(102, 126, 234, 0.6), 0 0 60px rgba(102, 126, 234, 0.3);
+            }
+        }
+
+        @keyframes colorWave {
+            0% { filter: hue-rotate(0deg) saturate(1); }
+            25% { filter: hue-rotate(90deg) saturate(1.2); }
+            50% { filter: hue-rotate(180deg) saturate(1.4); }
+            75% { filter: hue-rotate(270deg) saturate(1.2); }
+            100% { filter: hue-rotate(360deg) saturate(1); }
+        }
+
+        @keyframes pulseBorder {
+            0%, 100% {
+                border-color: rgba(255,255,255,0.3);
+                box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.4);
+            }
+            50% {
+                border-color: rgba(102, 126, 234, 0.8);
+                box-shadow: 0 0 0 10px rgba(102, 126, 234, 0);
+            }
+        }
+
+        @keyframes slideInScale {
+            0% {
+                opacity: 0;
+                transform: translateY(50px) scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Erweiterte Partikel-Effekte */
+        .particle-special {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #f093fb);
+            border-radius: 50%;
+            animation: floatParticleSpecial 8s ease-in-out infinite;
+        }
+
+        @keyframes floatParticleSpecial {
+            0%, 100% {
+                transform: translateY(100vh) rotate(0deg) scale(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+                transform: rotate(180deg) scale(1);
+            }
+            90% {
+                opacity: 1;
+                transform: rotate(720deg) scale(1.2);
+            }
+            100% {
+                transform: translateY(-100px) rotate(1080deg) scale(0);
+                opacity: 0;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 4rem;
+            margin-bottom: 30px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+            animation: fadeInUp 1s ease, float 3s ease-in-out infinite;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #f093fb, #ffd700, #ff8c42);
+            background-size: 300% 300%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeInUp 1s ease, gradientShift 4s ease infinite;
+        }
+
+        .setup-section {
+            background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05));
+            padding: 30px;
+            border-radius: 25px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            animation: slideInLeft 0.8s ease;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .setup-section:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+            background: linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.1));
+        }
+
+        .input-group {
+            margin-bottom: 25px;
+            animation: fadeInUp 0.6s ease;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            color: white;
+        }
+
+        input[type="url"], input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 15px;
+            font-size: 1.1rem;
+            background: rgba(255,255,255,0.95);
+            color: #333;
+            transition: all 0.3s ease;
+            box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        input:focus {
+            outline: none;
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(255,255,255,0.5), inset 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .settings-row {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .settings-row .input-group {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        button {
+            background: linear-gradient(45deg, #667eea, #764ba2, #f093fb);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: left 0.6s;
+        }
+
+        button:hover::before {
+            left: 100%;
+        }
+
+        button:hover {
+            transform: translateY(-6px) scale(1.08);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.6);
+            background: linear-gradient(45deg, #764ba2, #f093fb, #667eea);
+        }
+
+        button:active {
+            transform: translateY(-3px) scale(0.98);
+        }
+
+        .game-section {
+            display: none;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .video-container {
+            background: rgba(0,0,0,0.9);
+            padding: 25px;
+            border-radius: 25px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            border: 2px solid rgba(255,255,255,0.1);
+            animation: slideInRight 0.8s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .video-container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(transparent, rgba(255,255,255,0.1), transparent);
+            animation: spin 4s linear infinite;
+            z-index: 0;
+        }
+
+        @keyframes spin {
+            100% { transform: rotate(360deg); }
+        }
+
+        .video-container > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+        }
+
+        /* Video Controls erweitert */
+        .video-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+            padding: 25px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05));
+            border-radius: 25px;
+            backdrop-filter: blur(15px);
+            animation: fadeInUp 0.8s ease;
+            border: 1px solid rgba(255,255,255,0.2);
+            flex-wrap: wrap;
+        }
+
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .control-group:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Verbesserte Slider-Styles */
+        .slider {
+            width: 100px;
+            height: 6px;
+            border-radius: 5px;
+            background: linear-gradient(90deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1));
+            outline: none;
+            appearance: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .slider:hover {
+            background: linear-gradient(90deg, rgba(255,255,255,0.4), rgba(255,255,255,0.2));
+            transform: scale(1.05);
+        }
+
+        .slider::-webkit-slider-thumb {
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(102, 126, 234, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .slider::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.8);
+        }
+
+        .slider::-moz-range-thumb {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 2px 10px rgba(102, 126, 234, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .slider::-moz-range-thumb:hover {
+            transform: scale(1.2);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.8);
+        }
+
+        .control-btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .control-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+            background: linear-gradient(45deg, #764ba2, #667eea);
+        }
+
+        /* Game End Overlay */
+        .game-end-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+
+        /* Punktesystem */
+        .points-indicator {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: linear-gradient(45deg, #f39c12, #e67e22);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(243, 156, 18, 0.4);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        /* Erweiterte Animationen */
+        @keyframes sparkle {
+            0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
+            50% { transform: scale(1.2) rotate(180deg); opacity: 0.8; }
+        }
+
+        @keyframes winner-glow {
+            0%, 100% { 
+                box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+                transform: scale(1);
+            }
+            50% { 
+                box-shadow: 0 0 40px rgba(255, 215, 0, 0.8);
+                transform: scale(1.02);
+            }
+        }
+
+        .eliminated-card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .eliminated-card::after {
+            content: '💀 AUSGESCHIEDEN';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-15deg);
+            background: rgba(231, 76, 60, 0.9);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            z-index: 2;
+            animation: bounceIn 0.8s ease;
+        }
+
+        .players-section {
+            display: none; /* Alte Sektion ausblenden */
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .player-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05));
+            padding: 25px;
+            border-radius: 25px;
+            text-align: center;
+            backdrop-filter: blur(20px);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(255,255,255,0.3);
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 0.6s ease;
+        }
+
+        .player-card::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #f093fb, #ffd700, #ff8c42);
+            background-size: 300% 300%;
+            border-radius: 25px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            animation: gradientShift 4s ease infinite;
+        }
+
+        .player-card:hover::before {
+            opacity: 1;
+        }
+
+        .player-card:hover {
+            transform: translateY(-12px) scale(1.05);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+        }
+
+        .player-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hearts {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .heart {
+            display: inline-block;
+            animation: heartBeat 1.5s ease-in-out infinite;
+            margin: 0 2px;
+        }
+
+        .heart:nth-child(odd) {
+            animation-delay: 0.3s;
+        }
+
+        .broken-heart {
+            opacity: 0.3;
+            animation: none;
+        }
+
+        .laugh-btn {
+            background: linear-gradient(45deg, #ff6b6b, #ff5722, #e74c3c);
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+        }
+
+        .laugh-btn:hover {
+            animation: shake 0.5s ease-in-out;
+            background: linear-gradient(45deg, #e74c3c, #c0392b, #ff6b6b);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(255, 107, 107, 0.6);
+        }
+
+        .laugh-btn:disabled {
+            background: linear-gradient(45deg, #666, #555);
+            cursor: not-allowed;
+            transform: none;
+            animation: none;
+        }
+
+        .laugh-btn:disabled:hover {
+            transform: none;
+            animation: none;
+        }
+
+        .leaderboard {
+            display: none; /* Leaderboard nur am Ende anzeigen */
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 25px;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255,255,255,0.2);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            animation: slideInLeft 0.8s ease;
+        }
+
+        .leaderboard h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .leaderboard-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 15px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            animation: slideInRight 0.6s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .leaderboard-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .leaderboard-item.first {
+            background: linear-gradient(45deg, #ffd700, #ffed4e, #fff59d);
+            color: #333;
+            font-weight: bold;
+            animation: slideInRight 0.6s ease, pulse 3s ease-in-out infinite;
+            box-shadow: 0 10px 30px rgba(255,215,0,0.4);
+        }
+
+        .leaderboard-item.second {
+            background: linear-gradient(45deg, #c0c0c0, #e8e8e8, #f5f5f5);
+            color: #333;
+            box-shadow: 0 8px 25px rgba(192,192,192,0.4);
+        }
+
+        .leaderboard-item.third {
+            background: linear-gradient(45deg, #cd7f32, #daa520, #e6ac00);
+            color: white;
+            box-shadow: 0 8px 25px rgba(205,127,50,0.4);
+        }
+
+        .game-controls {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .game-controls button {
+            margin: 0 15px;
+            background: linear-gradient(45deg, #4ecdc4, #44a08d, #5dd39e);
+            box-shadow: 0 8px 25px rgba(78,205,196,0.4);
+        }
+
+        .game-info {
+            text-align: center;
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            padding: 15px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            animation: fadeInUp 0.6s ease;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .video-loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.2rem;
+        }
+
+        .spinner {
+            border: 4px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top: 4px solid #fff;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+
+        /* Video Game Layout */
+        .video-game-layout {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .video-section {
+            flex: 1;
+        }
+
+        .players-sidebar {
+            background: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05));
+            border-radius: 25px;
+            padding: 25px;
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.3);
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .sidebar-player-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05));
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.2);
+            position: relative;
+        }
+
+        .sidebar-player-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1));
+        }
+
+        .sidebar-player-card.eliminated {
+            opacity: 0.6;
+            background: linear-gradient(135deg, rgba(231,76,60,0.3), rgba(192,57,43,0.1));
+        }
+
+        .sidebar-player-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .sidebar-hearts {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .sidebar-laugh-btn {
+            background: linear-gradient(45deg, #ff6b6b, #e74c3c);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .sidebar-laugh-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.4);
+        }
+
+        .sidebar-laugh-btn:disabled {
+            background: linear-gradient(45deg, #666, #555);
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+
+        .player-points {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: linear-gradient(45deg, #f39c12, #e67e22);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .video-game-layout {
+                grid-template-columns: 1fr 300px;
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 968px) {
+            .video-game-layout {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .players-sidebar {
+                max-height: none;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .settings-row {
+                flex-direction: column;
+            }
+            
+            .players-sidebar {
+                grid-template-columns: 1fr;
+            }
+
+            .game-controls button {
+                display: block;
+                margin: 10px auto;
+                width: 90%;
+                padding: 15px;
+                font-size: 1rem;
+            }
+
+            .video-controls {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .control-group {
+                justify-content: center;
+            }
+
+            .container {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .setup-section {
+                padding: 20px;
+            }
+
+            .video-container {
+                padding: 15px;
+            }
+
+            .sidebar-player-card {
+                padding: 15px;
+            }
+        }
+
+        /* Touch-friendly controls */
+        @media (pointer: coarse) {
+            button {
+                min-height: 44px;
+                padding: 12px 24px;
+            }
+
+            .sidebar-laugh-btn {
+                min-height: 44px;
+                padding: 12px 20px;
+            }
+
+            .slider {
+                height: 8px;
+            }
+
+            .slider::-webkit-slider-thumb {
+                width: 24px;
+                height: 24px;
+            }
+
+            .slider::-moz-range-thumb {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        /* Partikel Effekt */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: rgba(255,255,255,0.8);
+            border-radius: 50%;
+            animation: floatParticle 6s ease-in-out infinite;
+        }
+
+        @keyframes floatParticle {
+            0%, 100% {
+                transform: translateY(100vh) scale(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) scale(1);
+                opacity: 0;
+            }
+        }
+
+        /* Endgültiges Scoreboard */
+        .final-scoreboard {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px;
+            border-radius: 30px;
+            margin-top: 30px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+            animation: bounceIn 1s ease;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .final-scoreboard h2 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 30px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .final-score-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px;
+            margin-bottom: 20px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 25px;
+            font-size: 1.3rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+            animation: slideUp 0.8s ease;
+        }
+
+        .final-score-item:hover {
+            transform: scale(1.02);
+            background: rgba(255,255,255,0.25);
+        }
+
+        .final-score-item.champion {
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            color: #333;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(255,215,0,0.5);
+            transform: scale(1.05);
+        }
+
+        .final-score-item.runner-up {
+            background: linear-gradient(45deg, #c0c0c0, #e8e8e8);
+            color: #333;
+            font-weight: bold;
+        }
+
+        .final-score-item.third-place {
+            background: linear-gradient(45deg, #cd7f32, #daa520);
+            color: white;
+            font-weight: bold;
+        }
+
+        .final-stats {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            color: white;
+        }
+
+        .stat-item:last-child {
+            border-bottom: none;
+        }
+
+        /* Zusätzliche Game Features */
+        .time-controls {
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .timer {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #e74c3c;
+            margin: 10px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .sound-effects {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .sound-btn {
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+        }
+
+        /* Konfetti Animation */
+        .confetti {
+            position: fixed;
+            top: -10px;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        .confetti-piece {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #ff6b6b;
+            animation: confetti-fall 3s linear infinite;
+        }
+
+        @keyframes confetti-fall {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        /* Erweiterte Spieler-Statistiken */
+        .player-stats {
+            margin-top: 15px;
+            padding: 15px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+
+        .accuracy-bar {
+            width: 100%;
+            height: 10px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 5px 0;
+        }
+
+        .accuracy-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #e74c3c, #f39c12, #2ecc71);
+            transition: width 0.5s ease;
+        }
+
+        /* ===== VIDEO-GAME LAYOUT & SIDEBAR ===== */
+        .video-game-layout {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 25px;
+            margin: 20px 0;
+            min-height: 600px;
+        }
+
+        .video-section {
+            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+            border-radius: 20px;
+            padding: 20px;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .players-sidebar {
+            background: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.08));
+            border-radius: 20px;
+            padding: 20px;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255,255,255,0.2);
+            max-height: 600px;
+            overflow-y: auto;
+        }
+
+        .sidebar-player-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .sidebar-player-card:hover {
+            transform: translateX(5px) scale(1.02);
+            background: linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.15));
+        }
+
+        .player-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .player-header h4 {
+            margin: 0;
+            color: white;
+            font-size: 1.1rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .player-status {
+            font-size: 1.2rem;
+        }
+
+        .hearts-container {
+            display: flex;
+            gap: 3px;
+            margin: 10px 0;
+            justify-content: center;
+        }
+
+        .heart {
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .heart.active {
+            animation: heartBeat 1s infinite;
+        }
+
+        .heart.lost {
+            opacity: 0.3;
+            filter: grayscale(1);
+        }
+
+        .laugh-btn {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            border: none;
+            border-radius: 25px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            min-height: 44px; /* Touch-friendly */
+        }
+
+        .laugh-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(231, 76, 60, 0.4);
+        }
+
+        .laugh-btn:disabled {
+            background: linear-gradient(45deg, #95a5a6, #7f8c8d);
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        /* Alte Sektionen verstecken */
+        .players-section {
+            display: none !important;
+        }
+
+        .leaderboard {
+            display: none !important;
+        }
+
+        /* Zeige Leaderboard nur im finalen Scoreboard */
+        .final-scoreboard .leaderboard {
+            display: block !important;
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media screen and (max-width: 1200px) {
+            .video-game-layout {
+                grid-template-columns: 1fr 300px;
+                gap: 20px;
+            }
+            
+            .players-sidebar {
+                padding: 15px;
+            }
+            
+            .sidebar-player-card {
+                padding: 12px;
+                margin-bottom: 12px;
+            }
+        }
+
+        @media screen and (max-width: 968px) {
+            .video-game-layout {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .players-sidebar {
+                max-height: 400px;
+                order: -1; /* Sidebar oben auf mobil */
+            }
+            
+            .players-sidebar h3 {
+                font-size: 1.3rem;
+                margin-bottom: 15px;
+            }
+            
+            /* Spieler-Karten horizontal auf Tablet */
+            #sidebarPlayersContainer {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 15px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+            }
+            
+            .setup-section {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+            
+            .settings-row {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .video-section {
+                padding: 15px;
+            }
+            
+            .players-sidebar {
+                padding: 15px;
+            }
+            
+            /* Touch-optimierte Buttons */
+            button {
+                min-height: 44px;
+                padding: 12px 25px;
+                font-size: 1.1rem;
+            }
+            
+            .laugh-btn {
+                min-height: 44px;
+                font-size: 1rem;
+            }
+            
+            /* Spieler-Karten einzeln auf Handy */
+            #sidebarPlayersContainer {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+            
+            .sidebar-player-card {
+                padding: 15px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+                line-height: 1.2;
+            }
+            
+            .setup-section {
+                padding: 15px;
+                margin-bottom: 15px;
+            }
+            
+            .input-group {
+                margin-bottom: 20px;
+            }
+            
+            input[type="url"], input[type="text"], input[type="number"], select {
+                padding: 12px;
+                font-size: 1rem;
+            }
+            
+            label {
+                font-size: 1.1rem;
+                margin-bottom: 8px;
+            }
+            
+            button {
+                padding: 12px 20px;
+                font-size: 1rem;
+                min-height: 44px;
+            }
+            
+            .video-section, .players-sidebar {
+                padding: 12px;
+                border-radius: 15px;
+            }
+            
+            .sidebar-player-card {
+                padding: 12px;
+                margin-bottom: 10px;
+            }
+            
+            .player-header h4 {
+                font-size: 1rem;
+            }
+            
+            .hearts-container {
+                margin: 8px 0;
+            }
+            
+            .heart {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* ===== VERBESSERUNGEN FÜR TOUCH-GERÄTE ===== */
+        @media (hover: none) and (pointer: coarse) {
+            /* Touch-spezifische Verbesserungen */
+            .sidebar-player-card:hover {
+                transform: none; /* Kein hover-Effekt auf Touch */
+            }
+            
+            .sidebar-player-card:active {
+                transform: scale(0.98);
+                background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.2));
+            }
+            
+            .laugh-btn:active {
+                transform: scale(0.95);
+            }
+            
+            button:active {
+                transform: scale(0.95);
+            }
+            
+            /* Größere Touch-Bereiche */
+            .control-btn {
+                min-height: 48px;
+                padding: 12px 20px;
+            }
+            
+            .slider {
+                height: 8px;
+                -webkit-appearance: none;
+                appearance: none;
+            }
+            
+            .slider::-webkit-slider-thumb {
+                width: 24px;
+                height: 24px;
+                -webkit-appearance: none;
+                appearance: none;
+                background: white;
+                border-radius: 50%;
+                cursor: pointer;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+            }
+            
+            .slider::-moz-range-thumb {
+                width: 24px;
+                height: 24px;
+                background: white;
+                border-radius: 50%;
+                cursor: pointer;
+                border: none;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+            }
+        }
+
+        /* ===== PARTIKEL-EFFEKTE ===== */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .particle {
+            opacity: 0.6;
+        }
+
+        @keyframes particleFloat {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    
+    <div class="container">
+        <h1>🎭 Nicht Lachen Challenge 🎭</h1>
+        
+        <div class="setup-section" id="setup">
+            <div class="input-group">
+                <label for="videoUrl">🎬 YouTube Video URL:</label>
+                <input type="url" id="videoUrl" placeholder="https://www.youtube.com/watch?v=... oder https://youtu.be/...">
+            </div>
+            
+            <div class="settings-row">
+                <div class="input-group">
+                    <label for="gameCount">🎮 Anzahl Spiele:</label>
+                    <input type="number" id="gameCount" value="3" min="1" max="10">
+                </div>
+                
+                <div class="input-group">
+                    <label for="difficulty">⚡ Schwierigkeitsgrad:</label>
+                    <select id="difficulty" style="width: 100%; padding: 15px; border: none; border-radius: 15px; font-size: 1.1rem; background: rgba(255,255,255,0.95); color: #333;">
+                        <option value="easy">😊 Einfach (5 Herzen)</option>
+                        <option value="medium" selected>🤔 Mittel (3 Herzen)</option>
+                        <option value="hard">😤 Schwer (2 Herzen)</option>
+                        <option value="expert">🔥 Experte (1 Herz)</option>
+                        <option value="custom">⚙️ Benutzerdefiniert</option>
+                    </select>
+                </div>
+                
+                <div class="input-group" id="customHeartsGroup" style="display: none;">
+                    <label for="heartCount">❤️ Herzen pro Spieler:</label>
+                    <input type="number" id="heartCount" value="3" min="1" max="10">
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <label for="playerNames">👥 Spielernamen (durch Komma getrennt):</label>
+                <input type="text" id="playerNames" placeholder="z.B. Max, Lisa, Tom, Sarah">
+            </div>
+            
+            <div style="text-align: center; margin: 25px 0;">
+                <button onclick="showWatchLibrary()" style="background: linear-gradient(45deg, #9c27b0, #673ab7); margin-right: 15px; font-size: 1rem; padding: 12px 25px;">
+                    📚 Meine Video-Bibliothek
+                </button>
+                <button onclick="showOnlineLobby()" style="background: linear-gradient(45deg, #2196f3, #1976d2); margin-right: 15px; font-size: 1rem; padding: 12px 25px;">
+                    🌐 Online Multiplayer
+                </button>
+                <button onclick="showLobbyDebugInfo()" style="background: linear-gradient(45deg, #ff5722, #d84315); margin-right: 15px; font-size: 1rem; padding: 12px 25px;">
+                    🔧 Lobby Debug
+                </button>
+                <button onclick="startGame()">🚀 Spiel starten!</button>
+            </div>
+        </div>
+
+        <div class="game-section" id="gameSection">
+            <div class="game-info">
+                <div>🎯 Spiel <span id="currentGame">1</span> von <span id="totalGames">3</span></div>
+            </div>
+            
+            <!-- Neue Video-Game-Layout -->
+            <div class="video-game-layout">
+                <!-- Video Sektion -->
+                <div class="video-section">
+                    <div class="video-container">
+                        <div class="video-loading" id="videoLoading">
+                            <div class="spinner"></div>
+                            <div>Video wird geladen...</div>
+                        </div>
+                        <div class="video-wrapper">
+                            <iframe id="videoFrame" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                        </div>
+                        
+                        <!-- Video Controls -->
+                        <div class="video-controls">
+                            <div class="control-group">
+                                <button class="control-btn" onclick="togglePlayPause()">⏯️ Play/Pause</button>
+                                <button class="control-btn" onclick="skipBackward()">⏪ -10s</button>
+                                <button class="control-btn" onclick="skipForward()">⏩ +10s</button>
+                            </div>
+                            
+                            <div class="control-group">
+                                <span>📍 Zeit:</span>
+                                <input type="range" class="slider" id="progressSlider" min="0" max="100" value="0" onchange="seekVideo(this.value)" oninput="seekVideo(this.value)">
+                                <span id="timeDisplay">0:00 / 0:00</span>
+                            </div>
+                            
+                            <div class="control-group">
+                                <span>🔊</span>
+                                <input type="range" class="slider" id="volumeSlider" min="0" max="100" value="70" onchange="setVolume(this.value)">
+                                <span id="volumeValue">70%</span>
+                            </div>
+                            
+                            <div class="control-group">
+                                <span>⏱️</span>
+                                <input type="range" class="slider" id="speedSlider" min="0.25" max="2" step="0.25" value="1" onchange="setPlaybackSpeed(this.value)">
+                                <span id="speedValue">1x</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spieler Sidebar -->
+                <div class="players-sidebar" id="playersSidebar">
+                    <h3 style="color: white; text-align: center; margin-bottom: 20px; font-size: 1.5rem;">👥 Spieler</h3>
+                    <div id="sidebarPlayersContainer">
+                        <!-- Spieler werden hier dynamisch eingefügt -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="game-controls">
+                <button onclick="nextGame()">⏭️ Nächstes Spiel</button>
+                <button onclick="resetGame()">🔄 Neues Spiel</button>
+                <button onclick="showGameStats()">📊 Statistiken</button>
+                <button onclick="showVideoHistory()">🎬 Video-Verlauf</button>
+                <button onclick="endCurrentGame()">🏁 Spiel beenden</button>
+            </div>
+            
+            <div class="players-section" id="playersContainer">
+                <!-- Spieler werden hier dynamisch eingefügt -->
+            </div>
+            
+            <div class="leaderboard">
+                <h2>🏆 Rangliste 🏆</h2>
+                <div id="leaderboardContainer">
+                    <!-- Rangliste wird hier dynamisch eingefügt -->
+                </div>
+            </div>
+
+            <div class="final-scoreboard" id="finalScoreboard" style="display: none;">
+                <h2>🎊 Endgültiges Scoreboard 🎊</h2>
+                <div id="finalScoreboardContainer">
+                    <!-- Endgültiges Scoreboard wird hier dynamisch eingefügt -->
+                </div>
+                <div class="final-stats" id="finalStats">
+                    <!-- Statistiken werden hier eingefügt -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game End Overlay -->
+    <div class="game-end-overlay" id="gameEndOverlay">
+        <div id="gameEndContent"></div>
+    </div>
+
+    <!-- Video History Modal -->
+    <div class="game-end-overlay" id="videoHistoryModal" style="display: none;">
+        <div style="background: rgba(255,255,255,0.95); padding: 40px; border-radius: 25px; max-width: 800px; max-height: 80vh; overflow-y: auto; backdrop-filter: blur(20px); box-shadow: 0 25px 50px rgba(0,0,0,0.3); border: 2px solid rgba(255,255,255,0.3);">
+            <h2 style="text-align: center; margin-bottom: 30px; color: #333; font-size: 2.5rem; background: linear-gradient(45deg, #8e44ad, #3498db); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">🎬 Video-Verlauf</h2>
+            <div id="videoHistoryContent"></div>
+            <div style="text-align: center; margin-top: 30px;">
+                <button class="control-btn" onclick="closeVideoHistory()" style="padding: 15px 30px; font-size: 1.2rem; background: linear-gradient(45deg, #e74c3c, #c0392b);">✖️ Schließen</button>
+                <button class="control-btn" onclick="clearVideoHistory()" style="padding: 15px 30px; font-size: 1.2rem; background: linear-gradient(45deg, #f39c12, #e67e22); margin-left: 15px;">🗑️ Verlauf löschen</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Watch Library Modal (für Setup-Phase) -->
+    <div class="game-end-overlay" id="watchLibraryModal" style="display: none;">
+        <div style="background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(240,248,255,0.95)); padding: 40px; border-radius: 25px; max-width: 900px; max-height: 85vh; overflow-y: auto; backdrop-filter: blur(20px); box-shadow: 0 25px 50px rgba(0,0,0,0.3); border: 2px solid rgba(156,39,176,0.3);">
+            <h2 style="text-align: center; margin-bottom: 30px; color: #333; font-size: 2.8rem; background: linear-gradient(45deg, #9c27b0, #673ab7, #3f51b5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">📚 Meine Video-Bibliothek</h2>
+            
+            <div style="background: linear-gradient(135deg, rgba(156,39,176,0.1), rgba(103,58,183,0.1)); padding: 20px; border-radius: 15px; margin-bottom: 25px; border: 1px solid rgba(156,39,176,0.2);">
+                <p style="text-align: center; color: #555; font-size: 1.1rem; margin: 0;">
+                    <strong>💡 Wähle ein Video aus deiner Sammlung oder entdecke neue!</strong><br>
+                    <span style="font-size: 0.9rem; opacity: 0.8;">Klicke auf ein Video, um es für dein nächstes Spiel zu verwenden.</span>
+                </p>
+            </div>
+            
+            <div id="watchLibraryContent"></div>
+            
+            <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 2px solid rgba(156,39,176,0.2);">
+                <button class="control-btn" onclick="closeWatchLibrary()" style="padding: 15px 30px; font-size: 1.2rem; background: linear-gradient(45deg, #e74c3c, #c0392b); background-clip: padding-box; margin-right: 15px;">✖️ Schließen</button>
+                <button class="control-btn" onclick="clearVideoHistory()" style="padding: 15px 30px; font-size: 1.2rem; background: linear-gradient(45deg, #f39c12, #e67e22); background-clip: padding-box; margin-right: 15px;">🗑️ Bibliothek leeren</button>
+                <button class="control-btn" onclick="showVideoStatistics()" style="padding: 15px 30px; font-size: 1.2rem; background: linear-gradient(45deg, #2196f3, #1976d2); background-clip: padding-box;">📊 Statistiken</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Online Lobby Modal -->
+    <div class="game-end-overlay" id="onlineLobbyModal" style="display: none;">
+        <div style="background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(240,248,255,0.95)); padding: 40px; border-radius: 25px; max-width: 800px; max-height: 85vh; overflow-y: auto; backdrop-filter: blur(20px); box-shadow: 0 25px 50px rgba(0,0,0,0.3); border: 2px solid rgba(33,150,243,0.3);">
+            <h2 style="text-align: center; margin-bottom: 30px; color: #333; font-size: 2.8rem; background: linear-gradient(45deg, #2196f3, #1976d2, #0d47a1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">🌐 Online Multiplayer</h2>
+            
+            <div id="lobbyContent">
+                <div style="text-align: center; margin-bottom: 30px;">
+                    <div style="background: linear-gradient(135deg, rgba(33,150,243,0.1), rgba(25,118,210,0.1)); padding: 20px; border-radius: 15px; margin-bottom: 25px; border: 1px solid rgba(33,150,243,0.2);">
+                        <p style="text-align: center; color: #555; font-size: 1.1rem; margin: 0;">
+                            <strong>🎮 Spiele online mit Freunden!</strong><br>
+                            <span style="font-size: 0.9rem; opacity: 0.8;">Erstelle eine Lobby oder tritt einer bestehenden bei.</span>
+                        </p>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 30px;">
+                        <div style="background: white; padding: 25px; border-radius: 15px; box-shadow: 0 8px 25px rgba(33,150,243,0.1); border: 1px solid rgba(33,150,243,0.2);">
+                            <h3 style="color: #2196f3; margin-bottom: 15px; font-size: 1.4rem;">🚀 Lobby erstellen</h3>
+                            <p style="color: #666; margin-bottom: 20px; font-size: 0.9rem;">Als Host hast du die Kontrolle über das Spiel.</p>
+                            <button onclick="createLobby()" style="width: 100%; padding: 12px; background: linear-gradient(45deg, #4caf50, #388e3c); color: white; border: none; border-radius: 25px; font-weight: bold; font-size: 1.1rem; cursor: pointer;">
+                                ➕ Neue Lobby erstellen
+                            </button>
+                        </div>
+                        
+                        <div style="background: white; padding: 25px; border-radius: 15px; box-shadow: 0 8px 25px rgba(33,150,243,0.1); border: 1px solid rgba(33,150,243,0.2);">
+                            <h3 style="color: #2196f3; margin-bottom: 15px; font-size: 1.4rem;">🔗 Lobby beitreten</h3>
+                            <p style="color: #666; margin-bottom: 15px; font-size: 0.9rem;">Gib den Lobby-Code ein, den du erhalten hast.</p>
+                            <input type="text" id="lobbyCodeInput" placeholder="Lobby-Code eingeben..." style="width: 100%; padding: 10px; border: 2px solid #ddd; border-radius: 10px; margin-bottom: 15px; font-size: 1rem;">
+                            <button onclick="joinLobby()" style="width: 100%; padding: 12px; background: linear-gradient(45deg, #2196f3, #1976d2); color: white; border: none; border-radius: 25px; font-weight: bold; font-size: 1.1rem; cursor: pointer;">
+                                🎯 Lobby beitreten
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Lobby-Raum (wird dynamisch angezeigt) -->
+                <div id="lobbyRoom" style="display: none;">
+                    <div style="background: linear-gradient(135deg, rgba(76,175,80,0.1), rgba(56,142,60,0.1)); padding: 20px; border-radius: 15px; margin-bottom: 25px; border: 1px solid rgba(76,175,80,0.3);">
+                        <h3 style="text-align: center; color: #4caf50; margin-bottom: 10px;">✅ Lobby aktiv!</h3>
+                        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                            <div>
+                                <strong>Lobby-Code:</strong> <span id="lobbyCodeDisplay" style="background: #4caf50; color: white; padding: 5px 10px; border-radius: 10px; font-family: monospace; font-size: 1.1rem;"></span>
+                            </div>
+                            <div>
+                                <strong>Status:</strong> <span id="lobbyStatus">Warten auf Spieler...</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Sharing-Buttons hinzufügen -->
+                        <div style="text-align: center; margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(76,175,80,0.3);">
+                            <button onclick="shareLobbyLink()" style="background: linear-gradient(45deg, #2196f3, #1976d2); color: white; border: none; padding: 8px 15px; border-radius: 20px; margin-right: 10px; cursor: pointer; font-size: 0.9rem;">
+                                📤 Link teilen
+                            </button>
+                            <button onclick="copyLobbyLink()" style="background: linear-gradient(45deg, #ff9800, #f57c00); color: white; border: none; padding: 8px 15px; border-radius: 20px; cursor: pointer; font-size: 0.9rem;">
+                                📋 Link kopieren
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 25px;">
+                        <div>
+                            <h4 style="color: #333; margin-bottom: 15px;">👥 Spieler in der Lobby:</h4>
+                            <div id="lobbyPlayersList" style="background: white; padding: 15px; border-radius: 10px; min-height: 150px; border: 1px solid #ddd;"></div>
+                        </div>
+                        
+                        <div>
+                            <h4 style="color: #333; margin-bottom: 15px;">💬 Chat:</h4>
+                            <div id="lobbyChatMessages" style="background: white; padding: 15px; border-radius: 10px; height: 120px; overflow-y: auto; border: 1px solid #ddd; margin-bottom: 10px; font-size: 0.9rem;"></div>
+                            <div style="display: flex; gap: 10px;">
+                                <input type="text" id="chatInput" placeholder="Nachricht eingeben..." style="flex: 1; padding: 8px; border: 1px solid #ddd; border-radius: 8px;" onkeypress="if(event.key==='Enter') sendChatMessage()">
+                                <button onclick="sendChatMessage()" style="padding: 8px 15px; background: #2196f3; color: white; border: none; border-radius: 8px; cursor: pointer;">📤</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="hostControls" style="display: none;">
+                        <div style="background: linear-gradient(135deg, rgba(255,152,0,0.1), rgba(255,87,34,0.1)); padding: 20px; border-radius: 15px; border: 1px solid rgba(255,152,0,0.3);">
+                            <h4 style="color: #ff9800; margin-bottom: 15px;">👑 Host-Kontrollen:</h4>
+                            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                                <button onclick="startOnlineGame()" style="padding: 10px 20px; background: linear-gradient(45deg, #4caf50, #388e3c); color: white; border: none; border-radius: 20px; font-weight: bold; cursor: pointer;">
+                                    🚀 Spiel für alle starten
+                                </button>
+                                <button onclick="kickPlayer()" style="padding: 10px 20px; background: linear-gradient(45deg, #f44336, #d32f2f); color: white; border: none; border-radius: 20px; font-weight: bold; cursor: pointer;">
+                                    🚫 Spieler entfernen
+                                </button>
+                                <button onclick="syncVideo()" style="padding: 10px 20px; background: linear-gradient(45deg, #9c27b0, #7b1fa2); color: white; border: none; border-radius: 20px; font-weight: bold; cursor: pointer;">
+                                    🎬 Video synchronisieren
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 2px solid rgba(33,150,243,0.2);">
+                <button onclick="closeOnlineLobby()" style="padding: 15px 30px; font-size: 1.2rem; background: linear-gradient(45deg, #e74c3c, #c0392b); color: white; border: none; border-radius: 25px; cursor: pointer; margin-right: 15px;">✖️ Schließen</button>
+                <button onclick="leaveLobby()" id="leaveLobbyBtn" style="display: none; padding: 15px 30px; font-size: 1.2rem; background: linear-gradient(45deg, #f39c12, #e67e22); color: white; border: none; border-radius: 25px; cursor: pointer;">🚪 Lobby verlassen</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Socket.IO Client -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="multiplayer-client.js"></script>
+    
+    <script>
+        let players = [];
+        let currentGameNumber = 1;
+        let totalGames = 3;
+        let gameHistory = [];
+        let gameStartTime = null;
+        let currentTimer = null;
+        let gameEnded = false;
+        let videoPlayer = null;
+        let videoHistoryData = [];
+
+        // Cookie-Funktionen für Video-Verlauf
+        function setCookie(name, value, days) {
+            const expires = new Date();
+            expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
+            document.cookie = name + '=' + encodeURIComponent(JSON.stringify(value)) + ';expires=' + expires.toUTCString() + ';path=/';
+        }
+
+        function getCookie(name) {
+            const nameEQ = name + '=';
+            const ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) {
+                    try {
+                        return JSON.parse(decodeURIComponent(c.substring(nameEQ.length, c.length)));
+                    } catch (e) {
+                        return null;
+                    }
+                }
+            }
+            return null;
+        }
+
+        function saveVideoToHistory(videoId, videoUrl, title) {
+            const videoData = {
+                id: videoId,
+                url: videoUrl,
+                title: title || `Video ${videoId}`,
+                playedAt: new Date().toLocaleString('de-DE'),
+                thumbnail: `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`
+            };
+
+            // Verhindere Duplikate
+            videoHistoryData = videoHistoryData.filter(v => v.id !== videoId);
+            videoHistoryData.unshift(videoData);
+
+            // Begrenze auf die letzten 20 Videos
+            if (videoHistoryData.length > 20) {
+                videoHistoryData = videoHistoryData.slice(0, 20);
+            }
+
+            setCookie('videoHistory', videoHistoryData, 365);
+        }
+
+        function loadVideoHistory() {
+            const saved = getCookie('videoHistory');
+            if (saved && Array.isArray(saved)) {
+                videoHistoryData = saved;
+            }
+        }
+
+        // Video-Verlauf anzeigen
+        function showVideoHistory() {
+            const modal = document.getElementById('videoHistoryModal');
+            const content = document.getElementById('videoHistoryContent');
+            
+            if (videoHistoryData.length === 0) {
+                content.innerHTML = `
+                    <div style="text-align: center; padding: 40px; color: #666;">
+                        <div style="font-size: 4rem; margin-bottom: 20px;">📹</div>
+                        <h3>Noch keine Videos abgespielt</h3>
+                        <p>Spiele dein erstes Video ab, um den Verlauf zu starten!</p>
+                    </div>
+                `;
+            } else {
+                content.innerHTML = videoHistoryData.map((video, index) => `
+                    <div style="display: flex; align-items: center; padding: 15px; margin-bottom: 15px; background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05)); border-radius: 15px; transition: all 0.3s ease; cursor: pointer; border: 1px solid rgba(255,255,255,0.2);" 
+                         onclick="loadVideoFromHistory('${video.id}', '${video.url}', '${video.title}')"
+                         onmouseover="this.style.transform='translateX(10px) scale(1.02)'; this.style.background='linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1))'"
+                         onmouseout="this.style.transform='none'; this.style.background='linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05))'">
+                        <img src="${video.thumbnail}" alt="Video Thumbnail" style="width: 120px; height: 68px; border-radius: 10px; margin-right: 15px; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        <div style="flex: 1; color: #333;">
+                            <h4 style="margin: 0 0 5px 0; font-size: 1.1rem; color: #2c3e50;">${video.title}</h4>
+                            <p style="margin: 0; color: #7f8c8d; font-size: 0.9rem;">🕒 ${video.playedAt}</p>
+                            <p style="margin: 5px 0 0 0; color: #3498db; font-size: 0.8rem;">🆔 ${video.id}</p>
+                        </div>
+                        <div style="padding: 8px 15px; background: linear-gradient(45deg, #3498db, #2980b9); color: white; border-radius: 20px; font-size: 0.9rem; font-weight: bold;">
+                            ▶️ Abspielen
+                        </div>
+                    </div>
+                `).join('');
+            }
+            
+            modal.style.display = 'flex';
+            modal.style.animation = 'fadeIn 0.3s ease';
+        }
+
+        function closeVideoHistory() {
+            const modal = document.getElementById('videoHistoryModal');
+            modal.style.animation = 'fadeOut 0.3s ease';
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 300);
+        }
+
+        function clearVideoHistory() {
+            if (confirm('🗑️ Möchtest du wirklich den gesamten Video-Verlauf löschen?')) {
+                videoHistoryData = [];
+                setCookie('videoHistory', [], 365);
+                showVideoHistory(); // Aktualisiere die Anzeige
+                alert('✅ Video-Verlauf wurde gelöscht!');
+            }
+        }
+
+        // Watch Library für Setup-Phase anzeigen
+        function showWatchLibrary() {
+            const modal = document.getElementById('watchLibraryModal');
+            const content = document.getElementById('watchLibraryContent');
+            
+            if (videoHistoryData.length === 0) {
+                content.innerHTML = `
+                    <div style="text-align: center; padding: 60px 20px; color: #666;">
+                        <div style="font-size: 5rem; margin-bottom: 25px; opacity: 0.7;">📹</div>
+                        <h3 style="color: #9c27b0; margin-bottom: 15px; font-size: 1.8rem;">Deine Video-Bibliothek ist leer</h3>
+                        <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px;">
+                            Spiele dein erstes Video ab, um deine persönliche Sammlung zu starten!<br>
+                            Alle Videos, die du verwendest, werden automatisch hier gespeichert.
+                        </p>
+                        <div style="background: linear-gradient(135deg, rgba(156,39,176,0.1), rgba(103,58,183,0.1)); padding: 20px; border-radius: 10px; margin-top: 25px;">
+                            <p style="margin: 0; color: #777; font-size: 0.95rem;">
+                                💡 <strong>Tipp:</strong> Füge einfach eine YouTube-URL ein und starte ein Spiel!
+                            </p>
+                        </div>
+                    </div>
+                `;
+            } else {
+                // Statistiken berechnen
+                const totalVideos = videoHistoryData.length;
+                const recentVideos = videoHistoryData.filter(video => {
+                    const playedDate = new Date(video.playedAt.split(', ')[0].split('.').reverse().join('-'));
+                    const daysDiff = Math.floor((Date.now() - playedDate.getTime()) / (1000 * 60 * 60 * 24));
+                    return daysDiff <= 7;
+                }).length;
+                
+                content.innerHTML = `
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px;">
+                        <div style="background: linear-gradient(135deg, #9c27b0, #673ab7); color: white; padding: 20px; border-radius: 15px; text-align: center; box-shadow: 0 8px 25px rgba(156,39,176,0.3);">
+                            <div style="font-size: 2.5rem; margin-bottom: 10px;">📚</div>
+                            <div style="font-size: 1.8rem; font-weight: bold;">${totalVideos}</div>
+                            <div style="opacity: 0.9;">Videos gesamt</div>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #2196f3, #1976d2); color: white; padding: 20px; border-radius: 15px; text-align: center; box-shadow: 0 8px 25px rgba(33,150,243,0.3);">
+                            <div style="font-size: 2.5rem; margin-bottom: 10px;">🕒</div>
+                            <div style="font-size: 1.8rem; font-weight: bold;">${recentVideos}</div>
+                            <div style="opacity: 0.9;">Diese Woche</div>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #4caf50, #388e3c); color: white; padding: 20px; border-radius: 15px; text-align: center; box-shadow: 0 8px 25px rgba(76,175,80,0.3);">
+                            <div style="font-size: 2.5rem; margin-bottom: 10px;">⭐</div>
+                            <div style="font-size: 1.8rem; font-weight: bold;">${videoHistoryData[0] ? videoHistoryData[0].title.substring(0, 10) + '...' : 'N/A'}</div>
+                            <div style="opacity: 0.9;">Letztes Video</div>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <h3 style="color: #9c27b0; margin-bottom: 15px; font-size: 1.4rem; display: flex; align-items: center;">
+                            <span style="margin-right: 10px;">🎬</span> Deine Videos
+                        </h3>
+                    </div>
+                    
+                    <div style="max-height: 400px; overflow-y: auto; border: 1px solid rgba(156,39,176,0.2); border-radius: 10px; padding: 10px;">
+                        ${videoHistoryData.map((video, index) => `
+                            <div style="display: flex; align-items: center; padding: 15px; margin-bottom: 12px; background: linear-gradient(135deg, rgba(255,255,255,0.8), rgba(248,245,255,0.8)); border-radius: 12px; transition: all 0.3s ease; cursor: pointer; border: 1px solid rgba(156,39,176,0.1); position: relative; overflow: hidden;" 
+                                 onclick="loadVideoFromLibrary('${video.id}', '${video.url}', '${video.title}')"
+                                 onmouseover="this.style.transform='translateY(-3px) scale(1.02)'; this.style.boxShadow='0 8px 25px rgba(156,39,176,0.2)'; this.style.background='linear-gradient(135deg, rgba(255,255,255,0.95), rgba(243,238,255,0.95))'"
+                                 onmouseout="this.style.transform='none'; this.style.boxShadow='none'; this.style.background='linear-gradient(135deg, rgba(255,255,255,0.8), rgba(248,245,255,0.8))'">
+                                
+                                <div style="position: absolute; top: 8px; right: 8px; background: linear-gradient(45deg, #9c27b0, #673ab7); color: white; padding: 4px 8px; border-radius: 12px; font-size: 0.7rem; font-weight: bold;">
+                                    #${index + 1}
+                                </div>
+                                
+                                <img src="${video.thumbnail}" alt="Video Thumbnail" style="width: 140px; height: 79px; border-radius: 8px; margin-right: 15px; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 2px solid rgba(156,39,176,0.2);">
+                                
+                                <div style="flex: 1; color: #333;">
+                                    <h4 style="margin: 0 0 8px 0; font-size: 1.1rem; color: #2c3e50; font-weight: 600; line-height: 1.3;">${video.title}</h4>
+                                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 5px;">
+                                        <span style="display: flex; align-items: center; color: #7f8c8d; font-size: 0.9rem;">
+                                            <span style="margin-right: 5px;">🕒</span> ${video.playedAt}
+                                        </span>
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 10px;">
+                                        <span style="color: #9c27b0; font-size: 0.8rem; background: rgba(156,39,176,0.1); padding: 2px 8px; border-radius: 10px;">
+                                            🆔 ${video.id}
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                                <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                                    <div style="padding: 10px 16px; background: linear-gradient(45deg, #4caf50, #388e3c); color: white; border-radius: 25px; font-size: 0.9rem; font-weight: bold; transition: all 0.3s ease;">
+                                        ▶️ Verwenden
+                                    </div>
+                                    <div style="font-size: 0.7rem; color: #999; text-align: center;">
+                                        Für neues Spiel
+                                    </div>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            }
+            
+            modal.style.display = 'flex';
+            modal.style.animation = 'fadeIn 0.4s ease';
+        }
+
+        function closeWatchLibrary() {
+            const modal = document.getElementById('watchLibraryModal');
+            modal.style.animation = 'fadeOut 0.3s ease';
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 300);
+        }
+
+        function loadVideoFromLibrary(videoId, videoUrl, title) {
+            closeWatchLibrary();
+            
+            // Aktualisiere das URL-Feld im Setup
+            document.getElementById('videoUrl').value = videoUrl;
+            
+            // Visuelles Feedback
+            const urlInput = document.getElementById('videoUrl');
+            urlInput.style.borderLeft = '5px solid #4CAF50';
+            urlInput.style.boxShadow = '0 0 20px rgba(76, 175, 80, 0.3)';
+            
+            // Zeige Bestätigung mit erweiterten Infos
+            setTimeout(() => {
+                const confirmationMsg = `🎬 Video erfolgreich ausgewählt!\n\n` +
+                                      `📺 Titel: ${title}\n` +
+                                      `🆔 Video-ID: ${videoId}\n` +
+                                      `🎮 Bereit für das nächste Spiel!\n\n` +
+                                      `✨ Du kannst jetzt die Spieleinstellungen anpassen und loslegen!`;
+                alert(confirmationMsg);
+                
+                // Scroll zum Spiel-starten Button
+                document.querySelector('button[onclick="startGame()"]').scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'center' 
+                });
+            }, 500);
+            
+            // Effekt nach 3 Sekunden zurücksetzen
+            setTimeout(() => {
+                urlInput.style.borderLeft = 'none';
+                urlInput.style.boxShadow = 'inset 0 2px 5px rgba(0,0,0,0.1)';
+            }, 3000);
+        }
+
+        function showVideoStatistics() {
+            if (videoHistoryData.length === 0) {
+                alert('📊 Noch keine Statistiken verfügbar!\n\nSpiele mindestens ein Video ab, um Statistiken zu sehen.');
+                return;
+            }
+            
+            // Erweiterte Statistiken berechnen
+            const totalVideos = videoHistoryData.length;
+            const uniqueVideos = new Set(videoHistoryData.map(v => v.id)).size;
+            const recentVideos = videoHistoryData.filter(video => {
+                const playedDate = new Date(video.playedAt.split(', ')[0].split('.').reverse().join('-'));
+                const daysDiff = Math.floor((Date.now() - playedDate.getTime()) / (1000 * 60 * 60 * 24));
+                return daysDiff <= 7;
+            }).length;
+            
+            const oldestVideo = videoHistoryData[videoHistoryData.length - 1];
+            const newestVideo = videoHistoryData[0];
+            
+            // Häufigste Videos finden
+            const videoFrequency = {};
+            videoHistoryData.forEach(video => {
+                videoFrequency[video.id] = (videoFrequency[video.id] || 0) + 1;
+            });
+            
+            const mostPlayedVideo = Object.entries(videoFrequency)
+                .sort(([,a], [,b]) => b - a)[0];
+            
+            const mostPlayedVideoData = videoHistoryData.find(v => v.id === mostPlayedVideo[0]);
+            
+            const statsMessage = `📊 DEINE VIDEO-BIBLIOTHEK STATISTIKEN 📊
+
+📚 ÜBERBLICK:
+• Videos gesamt: ${totalVideos}
+• Einzigartige Videos: ${uniqueVideos}
+• Wiederholt angeschaut: ${totalVideos - uniqueVideos}
+• Diese Woche: ${recentVideos} Videos
+
+⭐ FAVORITEN:
+• Meistgespielt: "${mostPlayedVideoData.title}" (${mostPlayedVideo[1]}x)
+• Erstes Video: "${oldestVideo.title}" (${oldestVideo.playedAt})
+• Letztes Video: "${newestVideo.title}" (${newestVideo.playedAt})
+
+🎯 AKTIVITÄT:
+• Durchschnitt pro Woche: ${(recentVideos || 1).toFixed(1)} Videos
+• Lieblings-Zeitraum: ${recentVideos > totalVideos/2 ? 'Sehr aktiv in letzter Zeit! 🔥' : 'Konstante Nutzung 📈'}
+
+💡 EMPFEHLUNG:
+${uniqueVideos < 5 ? 'Probiere mehr verschiedene Videos aus! 🎬' : 
+  uniqueVideos < 10 ? 'Schöne Vielfalt in deiner Sammlung! 👍' : 
+  'Wow! Du bist ein echter Video-Sammler! 🏆'}`;
+            
+            alert(statsMessage);
+        }
+
+        // Spiel starten
+        function startGame() {
+            const videoUrl = document.getElementById('videoUrl').value.trim();
+            const gameCount = parseInt(document.getElementById('gameCount').value);
+            const playerNamesInput = document.getElementById('playerNames').value.trim();
+            const difficulty = document.getElementById('difficulty').value;
+
+            // Validierung
+            if (!videoUrl) {
+                alert('🚨 Bitte gib eine YouTube Video-URL ein!');
+                document.getElementById('videoUrl').focus();
+                return;
+            }
+
+            if (!playerNamesInput) {
+                alert('🚨 Bitte gib mindestens einen Spielernamen ein!');
+                document.getElementById('playerNames').focus();
+                return;
+            }
+
+            // YouTube Video ID extrahieren
+            const videoId = extractVideoId(videoUrl);
+            if (!videoId) {
+                alert('🚨 Ungültige YouTube URL! Verwende:\n• https://www.youtube.com/watch?v=VIDEO_ID\n• https://youtu.be/VIDEO_ID');
+                return;
+            }
+
+            // Spieler erstellen
+            const playerNames = playerNamesInput.split(',').map(name => name.trim()).filter(name => name);
+            if (playerNames.length === 0) {
+                alert('🚨 Keine gültigen Spielernamen gefunden!');
+                return;
+            }
+
+            // Herzen basierend auf Schwierigkeit
+            let heartsPerPlayer = 3;
+            switch (difficulty) {
+                case 'easy': heartsPerPlayer = 5; break;
+                case 'medium': heartsPerPlayer = 3; break;
+                case 'hard': heartsPerPlayer = 2; break;
+                case 'expert': heartsPerPlayer = 1; break;
+                case 'custom': heartsPerPlayer = parseInt(document.getElementById('heartCount').value) || 3; break;
+            }
+
+            // Spieler initialisieren
+            players = playerNames.map(name => ({
+                name: name,
+                hearts: heartsPerPlayer,
+                maxHearts: heartsPerPlayer,
+                laughCount: 0,
+                points: 0,
+                roundsWon: 0,
+                eliminated: false
+            }));
+
+            totalGames = gameCount;
+            currentGameNumber = 1;
+            gameStartTime = Date.now();
+            gameEnded = false;
+            gameHistory = [];
+
+            // Video zur Historie hinzufügen
+            saveVideoToHistory(videoId, videoUrl, `Spiel ${new Date().toLocaleDateString()}`);
+
+            // UI umschalten
+            document.getElementById('setup').style.display = 'none';
+            document.getElementById('gameSection').style.display = 'block';
+
+            // Video laden
+            loadVideo(videoId);
+
+            // Spieler anzeigen (neue Sidebar)
+            updateSidebarPlayers();
+
+            // Video-Steuerung verbessern
+            enhanceVideoControls();
+
+            // Partikel-Effekte starten
+            createParticles();
+
+            // Spiel-Info aktualisieren
+            document.getElementById('currentGame').textContent = currentGameNumber;
+            document.getElementById('totalGames').textContent = totalGames;
+
+            console.log('🎮 Spiel gestartet!', { players, videoId, totalGames });
+        }
+
+        // YouTube Video ID extrahieren
+        function extractVideoId(url) {
+            const regex = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
+            const match = url.match(regex);
+            return match ? match[1] : null;
+        }
+
+        // Video laden
+        function loadVideo(videoId) {
+            const iframe = document.getElementById('videoFrame');
+            const loadingDiv = document.getElementById('videoLoading');
+            
+            loadingDiv.style.display = 'block';
+            
+            const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=1&rel=0&modestbranding=1&enablejsapi=1`;
+            iframe.src = embedUrl;
+            
+            iframe.onload = function() {
+                loadingDiv.style.display = 'none';
+                console.log('✅ Video geladen:', videoId);
+            };
+        }
+
+        // Spieler hat gelacht (aktualisiert für Sidebar)
+        function playerLaughed(playerIndex) {
+            if (players[playerIndex].hearts <= 0) return;
+
+            players[playerIndex].hearts--;
+            players[playerIndex].laughCount++;
+
+            // Animation für das betroffene Spieler-Card in der Sidebar
+            const sidebarCard = document.querySelector(`[data-sidebar-player-index="${playerIndex}"]`);
+            if (sidebarCard) {
+                sidebarCard.style.animation = 'shake 0.5s ease-in-out';
+                setTimeout(() => {
+                    sidebarCard.style.animation = '';
+                }, 500);
+            }
+
+            // Wenn Spieler ausgeschieden ist
+            if (players[playerIndex].hearts <= 0) {
+                players[playerIndex].eliminated = true;
+                
+                // Punkte an überlebende Spieler vergeben
+                const survivingPlayers = players.filter(p => p.hearts > 0);
+                const pointsPerSurvivor = Math.max(1, Math.floor(3 / survivingPlayers.length));
+                
+                survivingPlayers.forEach(player => {
+                    player.points += pointsPerSurvivor;
+                });
+
+                // Konfetti für Ausscheiden
+                setTimeout(() => createConfetti(), 500);
+                
+                console.log(`💀 ${players[playerIndex].name} ist ausgeschieden!`);
+            }
+
+            // Sidebar aktualisieren
+            updateSidebarPlayers();
+            checkRoundEnd();
+
+            console.log(`😂 ${players[playerIndex].name} hat gelacht! Herzen: ${players[playerIndex].hearts}`);
+        }
+
+        // Nächstes Spiel
+        function nextGame() {
+            if (currentGameNumber >= totalGames) {
+                showFinalScoreboard();
+                return;
+            }
+
+            currentGameNumber++;
+            gameEnded = false;
+
+            // Herzen für alle Spieler zurücksetzen
+            players.forEach(player => {
+                player.hearts = player.maxHearts;
+                player.eliminated = false;
+            });
+
+            // UI aktualisieren
+            document.getElementById('currentGame').textContent = currentGameNumber;
+            updateSidebarPlayers();
+
+            alert(`🎮 Spiel ${currentGameNumber} von ${totalGames} startet!\n\n🔄 Alle Herzen wurden zurückgesetzt.`);
+        }
+
+        // Spiel zurücksetzen
+        function resetGame() {
+            if (confirm('🔄 Möchtest du das Spiel wirklich zurücksetzen?')) {
+                document.getElementById('gameSection').style.display = 'none';
+                document.getElementById('setup').style.display = 'block';
+                
+                // Variablen zurücksetzen
+                players = [];
+                currentGameNumber = 1;
+                gameHistory = [];
+                gameStartTime = null;
+                gameEnded = false;
+
+                console.log('🔄 Spiel wurde zurückgesetzt');
+            }
+        }
+
+        // Endgültiges Scoreboard anzeigen
+        function showFinalScoreboard() {
+            // Finale Statistiken berechnen
+            const totalLaughs = players.reduce((sum, player) => sum + player.laughCount, 0);
+            const gameTime = Date.now() - gameStartTime;
+            const minutes = Math.floor(gameTime / 60000);
+            const seconds = Math.floor((gameTime % 60000) / 1000);
+
+            // Spieler nach finalen Punkten sortieren
+            const finalRanking = [...players].sort((a, b) => {
+                if (b.points !== a.points) return b.points - a.points;
+                if (b.hearts !== a.hearts) return b.hearts - a.hearts;
+                return a.laughCount - b.laughCount; // Weniger Lachen ist besser
+            });
+
+            const scoreboardContainer = document.getElementById('finalScoreboardContainer');
+            scoreboardContainer.innerHTML = finalRanking.map((player, index) => {
+                let itemClass = 'final-score-item';
+                let emoji = '🏅';
+                let title = `${index + 1}. Platz`;
+
+                if (index === 0) {
+                    itemClass += ' champion';
+                    emoji = '🥇';
+                    title = 'CHAMPION';
+                } else if (index === 1) {
+                    itemClass += ' runner-up';
+                    emoji = '🥈';
+                    title = 'Zweiter Platz';
+                } else if (index === 2) {
+                    itemClass += ' third-place';
+                    emoji = '🥉';
+                    title = 'Dritter Platz';
+                }
+
+                return `
+                    <div class="${itemClass}">
+                        <div>
+                            <div style="font-size: 2rem; margin-bottom: 5px;">${emoji}</div>
+                            <div style="font-size: 1.2rem; margin-bottom: 5px;">${title}</div>
+                            <div style="font-size: 1.4rem; font-weight: bold;">${player.name}</div>
+                            <div style="font-size: 0.9rem; opacity: 0.8; margin-top: 5px;">
+                                😂 ${player.laughCount} mal gelacht • ❤️ ${player.hearts} Herzen übrig
+                            </div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2.5rem; font-weight: bold; color: #ffd700;">${player.points}</div>
+                            <div style="font-size: 1rem;">Punkte</div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            // Finale Statistiken
+            const statsContainer = document.getElementById('finalStats');
+            statsContainer.innerHTML = `
+                <h3 style="color: white; text-align: center; margin-bottom: 20px;">📊 Spiel-Statistiken</h3>
+                <div class="stat-item">
+                    <span>🎮 Spiele gespielt:</span>
+                    <span>${currentGameNumber} von ${totalGames}</span>
+                </div>
+                <div class="stat-item">
+                    <span>⏱️ Gesamtspielzeit:</span>
+                    <span>${minutes}:${seconds.toString().padStart(2, '0')}</span>
+                </div>
+                <div class="stat-item">
+                    <span>😂 Lacher gesamt:</span>
+                    <span>${totalLaughs}</span>
+                </div>
+                <div class="stat-item">
+                    <span>👥 Spieler:</span>
+                    <span>${players.length}</span>
+                </div>
+                <div class="stat-item">
+                    <span>🎪 Durchschnitt pro Spieler:</span>
+                    <span>${(totalLaughs / players.length).toFixed(1)} Lacher</span>
+                </div>
+                <div class="stat-item">
+                    <span>🏆 Champion:</span>
+                    <span>${finalRanking[0].name} (${finalRanking[0].points} Punkte)</span>
+                </div>
+            `;
+
+            // Leaderboard einblenden (nur am Ende)
+            document.querySelector('.leaderboard').style.display = 'block';
+            
+            // Scoreboard anzeigen
+            document.getElementById('finalScoreboard').style.display = 'block';
+            
+            // Konfetti für das Ende
+            createConfetti();
+            
+            // Scroll zum Scoreboard
+            document.getElementById('finalScoreboard').scrollIntoView({ 
+                behavior: 'smooth', 
+                block: 'start' 
+            });
+
+            console.log('🏆 Finales Scoreboard angezeigt');
+        }
+
+        // Video aus Verlauf laden (während des Spiels)
+        function loadVideoFromHistory(videoId, videoUrl, title) {
+            closeVideoHistory();
+            
+            if (confirm(`🎬 Video "${title}" für das aktuelle Spiel laden?\n\n⚠️ Das aktuelle Video wird ersetzt!`)) {
+                loadVideo(videoId);
+                alert(`✅ Video "${title}" wurde geladen!`);
+            }
+        }
+
+        // Spiel-Statistiken anzeigen
+        function showGameStats() {
+            const totalLaughs = players.reduce((sum, player) => sum + player.laughCount, 0);
+            const totalHearts = players.reduce((sum, player) => sum + player.hearts, 0);
+            const maxHearts = players.reduce((sum, player) => sum + player.maxHearts, 0);
+            const accuracy = maxHearts > 0 ? ((totalHearts / maxHearts) * 100).toFixed(1) : 0;
+            
+            const gameTime = Date.now() - gameStartTime;
+            const minutes = Math.floor(gameTime / 60000);
+            const seconds = Math.floor((gameTime % 60000) / 1000);
+            
+            const stats = `
+📊 AKTUELLE SPIEL-STATISTIKEN 📊
+
+🎮 Spiel: ${currentGameNumber} von ${totalGames}
+⏱️ Spielzeit: ${minutes}:${seconds.toString().padStart(2, '0')}
+
+👥 SPIELER-ÜBERSICHT:
+${players.map(player => `
+• ${player.name}:
+  ❤️ Herzen: ${player.hearts}/${player.maxHearts}
+  😂 Gelacht: ${player.laughCount} mal
+  🏆 Punkte: ${player.points}
+  📈 Erfolgsrate: ${player.maxHearts > 0 ? ((player.hearts / player.maxHearts) * 100).toFixed(1) : 0}%
+`).join('')}
+
+🎯 GESAMT-STATISTIKEN:
+• 😂 Gelacht gesamt: ${totalLaughs} mal
+• ❤️ Herzen übrig: ${totalHearts}/${maxHearts}
+• 📊 Gesamtgenauigkeit: ${accuracy}%
+• 🎪 Durchschnitt pro Spieler: ${(totalLaughs / players.length).toFixed(1)} Lacher
+            `.trim();
+            
+            alert(stats);
+        }
+
+        // Schwierigkeitsgrad-Änderung
+        document.getElementById('difficulty').addEventListener('change', function() {
+            const customGroup = document.getElementById('customHeartsGroup');
+            if (this.value === 'custom') {
+                customGroup.style.display = 'block';
+            } else {
+                customGroup.style.display = 'none';
+            }
+        });
+
+        // Tastatur-Shortcuts
+        document.addEventListener('keydown', function(e) {
+            // Enter zum Spiel starten (nur im Setup)
+            if (e.key === 'Enter' && document.getElementById('setup').style.display !== 'none') {
+                startGame();
+            }
+            
+            // Escape zum Modal schließen
+            if (e.key === 'Escape') {
+                closeVideoHistory();
+                closeWatchLibrary();
+            }
+            
+            // F1 für Hilfe
+            if (e.key === 'F1') {
+                e.preventDefault();
+                showHelp();
+            }
+            
+            // Zahlen 1-9 für Spieler-Lachen
+            if (e.key >= '1' && e.key <= '9') {
+                const playerIndex = parseInt(e.key) - 1;
+                if (players[playerIndex] && document.getElementById('gameSection').style.display !== 'none') {
+                    playerLaughed(playerIndex);
+                }
+            }
+        });
+
+        // ===== FEHLENDE FUNKTIONEN ERGÄNZEN =====
+
+        // Sidebar-Spieler aktualisieren
+        function updateSidebarPlayers() {
+            const container = document.getElementById('sidebarPlayersContainer');
+            if (!container) return;
+            
+            container.innerHTML = players.map((player, index) => `
+                <div class="sidebar-player-card" data-sidebar-player-index="${index}" style="${player.eliminated ? 'opacity: 0.5; filter: grayscale(1);' : ''}">
+                    <div class="player-header">
+                        <h4>${player.name}</h4>
+                        <div class="player-status">
+                            ${player.eliminated ? '💀' : player.hearts > 0 ? '✅' : '⚠️'}
+                        </div>
+                    </div>
+                    
+                    <div class="hearts-container">
+                        ${Array(player.maxHearts).fill().map((_, i) => 
+                            `<span class="heart ${i < player.hearts ? 'active' : 'lost'}">${i < player.hearts ? '❤️' : '💔'}</span>`
+                        ).join('')}
+                    </div>
+                    
+                    <div class="player-stats">
+                        <div>😂 Gelacht: ${player.laughCount}</div>
+                        <div>🏆 Punkte: ${player.points}</div>
+                    </div>
+                    
+                    <button class="laugh-btn" onclick="playerLaughed(${index})" 
+                            ${player.hearts <= 0 ? 'disabled' : ''}>
+                        ${player.hearts > 0 ? '😂 Hat gelacht!' : '💀 Ausgeschieden'}
+                    </button>
+                </div>
+            `).join('');
+        }
+
+        // Video-Steuerung erweitern
+        let youtubePlayer = null;
+        let isPlayerReady = false;
+
+        function enhanceVideoControls() {
+            // YouTube API laden
+            if (!window.YT) {
+                const tag = document.createElement('script');
+                tag.src = 'https://www.youtube.com/iframe_api';
+                const firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+            }
+        }
+
+        // YouTube API Ready
+        window.onYouTubeIframeAPIReady = function() {
+            console.log('🎬 YouTube API bereit');
+        };
+
+        // Video-Steuerung Funktionen
+        function togglePlayPause() {
+            if (youtubePlayer && isPlayerReady) {
+                const state = youtubePlayer.getPlayerState();
+                if (state === 1) { // Playing
+                    youtubePlayer.pauseVideo();
+                } else {
+                    youtubePlayer.playVideo();
+                }
+            } else {
+                // Fallback für normales iframe
+                const iframe = document.getElementById('videoFrame');
+                if (iframe && iframe.contentWindow) {
+                    try {
+                        iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+                    } catch (e) {
+                        console.log('Video-Steuerung nicht verfügbar');
+                    }
+                }
+            }
+        }
+
+        function skipBackward() {
+            if (youtubePlayer && isPlayerReady) {
+                const currentTime = youtubePlayer.getCurrentTime();
+                youtubePlayer.seekTo(Math.max(0, currentTime - 10), true);
+            }
+        }
+
+        function skipForward() {
+            if (youtubePlayer && isPlayerReady) {
+                const currentTime = youtubePlayer.getCurrentTime();
+                const duration = youtubePlayer.getDuration();
+                youtubePlayer.seekTo(Math.min(duration, currentTime + 10), true);
+            }
+        }
+
+        function setVolume(volume) {
+            if (youtubePlayer && isPlayerReady) {
+                youtubePlayer.setVolume(volume);
+            }
+            document.getElementById('volumeValue').textContent = volume + '%';
+        }
+
+        function setPlaybackSpeed(speed) {
+            if (youtubePlayer && isPlayerReady) {
+                youtubePlayer.setPlaybackRate(parseFloat(speed));
+            }
+            document.getElementById('speedValue').textContent = speed + 'x';
+        }
+
+        function seekVideo(percent) {
+            if (youtubePlayer && isPlayerReady) {
+                const duration = youtubePlayer.getDuration();
+                const seekTime = (percent / 100) * duration;
+                youtubePlayer.seekTo(seekTime, true);
+            }
+        }
+
+        // Video-Zeit aktualisieren
+        function updateVideoTime() {
+            if (youtubePlayer && isPlayerReady) {
+                try {
+                    const currentTime = youtubePlayer.getCurrentTime();
+                    const duration = youtubePlayer.getDuration();
+                    
+                    if (duration > 0) {
+                        const progress = (currentTime / duration) * 100;
+                        document.getElementById('progressSlider').value = progress;
+                        
+                        const currentMinutes = Math.floor(currentTime / 60);
+                        const currentSeconds = Math.floor(currentTime % 60);
+                        const durationMinutes = Math.floor(duration / 60);
+                        const durationSeconds = Math.floor(duration % 60);
+                        
+                        document.getElementById('timeDisplay').textContent = 
+                            `${currentMinutes}:${currentSeconds.toString().padStart(2, '0')} / ${durationMinutes}:${durationSeconds.toString().padStart(2, '0')}`;
+                    }
+                } catch (e) {
+                    console.log('Zeit-Update fehgeschlagen:', e);
+                }
+            }
+        }
+
+        // Runden-Ende prüfen
+        function checkRoundEnd() {
+            const alivePlayers = players.filter(p => p.hearts > 0);
+            
+            if (alivePlayers.length <= 1) {
+                setTimeout(() => {
+                    if (alivePlayers.length === 1) {
+                        alivePlayers[0].roundsWon++;
+                        alivePlayers[0].points += 5; // Bonus für Rundengewinn
+                        alert(`🏆 ${alivePlayers[0].name} hat die Runde gewonnen!\n\n+5 Bonus-Punkte!`);
+                    } else {
+                        alert('🤝 Unentschieden! Alle Spieler sind ausgeschieden.');
+                    }
+                    
+                    gameEnded = true;
+                    updateSidebarPlayers();
+                    
+                    // Frage nach nächstem Spiel
+                    setTimeout(() => {
+                        if (currentGameNumber < totalGames) {
+                            if (confirm(`🎮 Runde ${currentGameNumber} beendet!\n\nMöchtest du Spiel ${currentGameNumber + 1} starten?`)) {
+                                nextGame();
+                            }
+                        } else {
+                            showFinalScoreboard();
+                        }
+                    }, 1000);
+                }, 500);
+            }
+        }
+
+        // Spiel beenden
+        function endCurrentGame() {
+            if (confirm('🏁 Möchtest du das aktuelle Spiel beenden und zum Scoreboard?')) {
+                showFinalScoreboard();
+            }
+        }
+
+        // Partikel-Effekte
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            if (!particlesContainer) return;
+            
+            particlesContainer.innerHTML = '';
+            
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.cssText = `
+                    position: absolute;
+                    width: 4px;
+                    height: 4px;
+                    background: rgba(255,255,255,0.8);
+                    border-radius: 50%;
+                    left: ${Math.random() * 100}%;
+                    top: ${Math.random() * 100}%;
+                    animation: float ${5 + Math.random() * 10}s infinite linear;
+                    opacity: ${0.3 + Math.random() * 0.7};
+                `;
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Konfetti-Effekt
+        function createConfetti() {
+            const colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#feca57', '#ff9ff3', '#54a0ff'];
+            
+            for (let i = 0; i < 30; i++) {
+                setTimeout(() => {
+                    const confetti = document.createElement('div');
+                    confetti.className = 'confetti-piece';
+                    confetti.style.cssText = `
+                        position: fixed;
+                        left: ${Math.random() * 100}%;
+                        top: -10px;
+                        width: 8px;
+                        height: 8px;
+                        background: ${colors[Math.floor(Math.random() * colors.length)]};
+                        z-index: 1000;
+                        animation: confetti-fall ${2 + Math.random() * 2}s linear forwards;
+                        transform: rotate(${Math.random() * 360}deg);
+                    `;
+                    
+                    document.body.appendChild(confetti);
+                    
+                    setTimeout(() => {
+                        confetti.remove();
+                    }, 4000);
+                }, i * 100);
+            }
+        }
+
+        // Hilfe anzeigen
+        function showHelp() {
+            const helpText = `
+🎭 NICHT LACHEN CHALLENGE - HILFE 🎭
+
+🎮 STEUERUNG:
+• Zahlen 1-9: Spieler 1-9 hat gelacht
+• Enter: Spiel starten (im Setup)
+• Escape: Modals schließen
+• F1: Diese Hilfe anzeigen
+
+🎬 VIDEO-STEUERUNG:
+• ⏯️ Play/Pause Button
+• ⏪/⏩ 10 Sekunden vor/zurück
+• 🔊 Lautstärke-Regler
+• ⏱️ Geschwindigkeits-Regler
+• 📍 Zeit-Navigation
+
+🏆 PUNKTESYSTEM:
+• Überleben einer Runde: +5 Punkte
+• Herzen behalten: Bonus-Punkte
+• Weniger lachen = bessere Platzierung
+
+📚 VIDEO-BIBLIOTHEK:
+• Alle Videos werden automatisch gespeichert
+• Schneller Zugriff auf gespielte Videos
+• Statistiken und Favoriten
+
+❤️ HERZEN-SYSTEM:
+• Einfach: 5 Herzen
+• Mittel: 3 Herzen  
+• Schwer: 2 Herzen
+• Experte: 1 Herz
+• Benutzerdefiniert: 1-10 Herzen
+
+Viel Spaß beim Spielen! 🎉
+            `;
+            alert(helpText);
+        }
+
+        // ===== ECHTES MULTIPLAYER LOBBY-SYSTEM MIT SOCKET.IO =====
+        
+        // Variablen für das neue System
+        let multiplayerClient = null;
+        let multiplayerLobby = null;
+        let isMultiplayerHost = false;
+        let multiplayerPlayerName = '';
+        
+        // === MULTIPLAYER CLIENT INITIALISIEREN ===
+        function initializeMultiplayerSystem() {
+            console.log('🚀 Initialisiere echtes Multiplayer-System...');
+            
+            try {
+                multiplayerClient = new MultiplayerClient();
+                
+                // Verbindungsstatus in UI anzeigen
+                setTimeout(() => {
+                    const status = multiplayerClient.getConnectionStatus();
+                    console.log('📡 Multiplayer-Status:', status);
+                }, 2000);
+                
+                return true;
+            } catch (error) {
+                console.error('❌ Fehler beim Initialisieren des Multiplayer-Systems:', error);
+                alert('❌ Multiplayer-System konnte nicht gestartet werden.\n\nFehler: ' + error.message + '\n\nFallback: Verwende lokales Lobby-System.');
+                return false;
+            }
+        }
+        
+        // === NEUE LOBBY ERSTELLEN (Socket.IO) ===
+        function createMultiplayerLobby() {
+            if (!multiplayerClient || !multiplayerClient.isConnected) {
+                alert('❌ Keine Verbindung zum Server!\n\nBitte überprüfe deine Internetverbindung oder versuche es später erneut.');
+                return;
+            }
+            
+            if (!multiplayerPlayerName) {
+                multiplayerPlayerName = prompt('🎮 Wie ist dein Name?', 'Spieler') || 'Spieler';
+            }
+            
+            console.log('🏠 Erstelle echte Multiplayer-Lobby...');
+            
+            const success = multiplayerClient.createLobby(multiplayerPlayerName);
+            
+            if (success) {
+                // Zeige Ladeindikator
+                showMultiplayerLoading('Lobby wird erstellt...');
+            }
+        }
+        
+        // === LOBBY BEITRETEN (Socket.IO) ===
+        function joinMultiplayerLobby(lobbyCode) {
+            if (!multiplayerClient || !multiplayerClient.isConnected) {
+                alert('❌ Keine Verbindung zum Server!\n\nBitte überprüfe deine Internetverbindung oder versuche es später erneut.');
+                return;
+            }
+            
+            if (!lobbyCode) {
+                lobbyCode = document.getElementById('lobbyCodeInput').value.trim().toUpperCase();
+            }
+            
+            if (!lobbyCode) {
+                alert('🚨 Bitte gib einen Lobby-Code ein!');
+                return;
+            }
+            
+            if (!multiplayerPlayerName) {
+                multiplayerPlayerName = prompt('🎮 Wie ist dein Name?', 'Spieler') || 'Spieler';
+            }
+            
+            console.log('👥 Trete echter Multiplayer-Lobby bei:', lobbyCode);
+            
+            const success = multiplayerClient.joinLobby(lobbyCode, multiplayerPlayerName);
+            
+            if (success) {
+                // Zeige Ladeindikator
+                showMultiplayerLoading('Lobby wird beigetreten...');
+            }
+        }
+        
+        // === MULTIPLAYER CHAT NACHRICHT SENDEN ===
+        function sendMultiplayerChatMessage() {
+            const input = document.getElementById('chatInput');
+            const message = input.value.trim();
+            
+            if (!message) return;
+            
+            if (!multiplayerClient || !multiplayerClient.isInLobby()) {
+                alert('❌ Du bist nicht in einer Lobby!');
+                return;
+            }
+            
+            const success = multiplayerClient.sendChatMessage(message);
+            
+            if (success) {
+                input.value = '';
+            }
+        }
+        
+        // === MULTIPLAYER SPIEL STARTEN ===
+        function startMultiplayerGame() {
+            if (!multiplayerClient || !multiplayerClient.isInLobby()) {
+                alert('❌ Du bist nicht in einer Lobby!');
+                return;
+            }
+            
+            if (!multiplayerClient.isLobbyHost()) {
+                alert('🚫 Nur der Host kann das Spiel starten!');
+                return;
+            }
+            
+            const lobby = multiplayerClient.getCurrentLobby();
+            
+            if (lobby.players.length < 2) {
+                alert('⚠️ Mindestens 2 Spieler werden benötigt!');
+                return;
+            }
+            
+            // Spiel-Einstellungen sammeln
+            const videoUrl = document.getElementById('videoUrl').value.trim();
+            const gameCount = parseInt(document.getElementById('gameCount').value) || 3;
+            const difficulty = document.getElementById('difficulty').value;
+            
+            if (!videoUrl) {
+                alert('🚨 Bitte wähle zuerst ein Video aus!');
+                return;
+            }
+            
+            const gameSettings = {
+                videoUrl: videoUrl,
+                gameCount: gameCount,
+                difficulty: difficulty,
+                videoId: extractVideoId(videoUrl)
+            };
+            
+            console.log('🎮 Starte Multiplayer-Spiel mit Einstellungen:', gameSettings);
+            
+            const success = multiplayerClient.startGame(gameSettings);
+            
+            if (success) {
+                showMultiplayerLoading('Spiel wird gestartet...');
+            }
+        }
+        
+        // === SPIELER ENTFERNEN (NUR HOST) ===
+        function kickMultiplayerPlayer() {
+            if (!multiplayerClient || !multiplayerClient.isLobbyHost()) {
+                alert('🚫 Nur der Host kann Spieler entfernen!');
+                return;
+            }
+            
+            const lobby = multiplayerClient.getCurrentLobby();
+            const otherPlayers = lobby.players.filter(p => !p.isHost);
+            
+            if (otherPlayers.length === 0) {
+                alert('ℹ️ Keine anderen Spieler zum Entfernen vorhanden.');
+                return;
+            }
+            
+            const playerNames = otherPlayers.map(p => `${p.name} (${p.id.substring(0, 8)}...)`);
+            const selectedPlayer = prompt(`Welchen Spieler möchtest du entfernen?\n\nVerfügbare Spieler:\n${playerNames.join('\n')}\n\nGib den Namen ein:`);
+            
+            if (!selectedPlayer) return;
+            
+            const targetPlayer = otherPlayers.find(p => p.name === selectedPlayer || selectedPlayer.includes(p.name));
+            
+            if (!targetPlayer) {
+                alert('❌ Spieler nicht gefunden!');
+                return;
+            }
+            
+            const success = multiplayerClient.kickPlayer(targetPlayer.id);
+            
+            if (success) {
+                console.log(`🚫 Entferne Spieler ${targetPlayer.name} (${targetPlayer.id})`);
+            }
+        }
+        
+        // === MULTIPLAYER LOBBY VERLASSEN ===
+        function leaveMultiplayerLobby() {
+            if (!multiplayerClient) return;
+            
+            const isHost = multiplayerClient.isLobbyHost();
+            
+            if (isHost) {
+                if (!confirm('👑 Du bist der Host! Wenn du die Lobby verlässt, wird sie für alle geschlossen.\n\nMöchtest du wirklich verlassen?')) {
+                    return;
+                }
+            }
+            
+            const success = multiplayerClient.leaveLobby();
+            
+            if (success) {
+                console.log('🚪 Verlasse Multiplayer-Lobby');
+                
+                // Reset lokale Variablen
+                multiplayerLobby = null;
+                isMultiplayerHost = false;
+                
+                // UI zurücksetzen
+                if (typeof closeOnlineLobby === 'function') {
+                    closeOnlineLobby();
+                }
+            }
+        }
+        
+        // === MULTIPLAYER LADEINDIKATOR ===
+        function showMultiplayerLoading(message) {
+            console.log('⏳', message);
+            
+            // Zeige Ladeindikator in UI falls verfügbar
+            const statusElement = document.querySelector('#lobbyStatus');
+            if (statusElement) {
+                statusElement.textContent = message;
+                statusElement.style.color = '#2196f3';
+            }
+        }
+        
+        // === MULTIPLAYER LOBBY ANZEIGE AKTUALISIEREN ===
+        function updateMultiplayerLobbyDisplay(lobby, isHost) {
+            console.log('🔄 Aktualisiere Multiplayer-Lobby-Display:', lobby);
+            
+            multiplayerLobby = lobby;
+            isMultiplayerHost = isHost;
+            
+            // Lobby-Code anzeigen
+            const codeDisplay = document.getElementById('lobbyCodeDisplay');
+            if (codeDisplay) {
+                codeDisplay.textContent = lobby.code;
+            }
+            
+            // Status aktualisieren
+            const statusElement = document.getElementById('lobbyStatus');
+            if (statusElement) {
+                if (isHost) {
+                    statusElement.textContent = 'Du bist der Host';
+                    statusElement.style.color = '#ffd700';
+                } else {
+                    statusElement.textContent = `Host: ${lobby.host}`;
+                    statusElement.style.color = '#4caf50';
+                }
+            }
+            
+            // Host-Kontrollen anzeigen/verstecken
+            const hostControls = document.getElementById('hostControls');
+            if (hostControls) {
+                hostControls.style.display = isHost ? 'block' : 'none';
+            }
+            
+            // Spielerliste aktualisieren
+            const playersList = document.getElementById('lobbyPlayersList');
+            if (playersList && lobby.players) {
+                playersList.innerHTML = lobby.players.map(player => `
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-bottom: 8px; background: ${player.isHost ? 'linear-gradient(135deg, #ffd700, #ffed4e)' : 'linear-gradient(135deg, #e3f2fd, #f3e5f5)'}; border-radius: 10px; color: ${player.isHost ? '#333' : '#666'}; border: 1px solid ${player.isHost ? '#ffd700' : '#ddd'};">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.2rem;">
+                                ${player.isHost ? '👑' : '👤'}
+                            </span>
+                            <div>
+                                <div style="font-weight: bold; font-size: 1rem;">
+                                    ${player.name}${player.isHost ? ' (Host)' : ''}
+                                </div>
+                                <div style="font-size: 0.8rem; opacity: 0.8;">
+                                    ${player.joinedAt ? 'Beigetreten: ' + new Date(player.joinedAt).toLocaleTimeString('de-DE', {hour: '2-digit', minute: '2-digit'}) : ''}
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 5px;">
+                            <span style="padding: 4px 8px; background: rgba(76,175,80,0.2); color: #4caf50; border-radius: 12px; font-size: 0.8rem; font-weight: bold;">
+                                🟢 Online
+                            </span>
+                        </div>
+                    </div>
+                `).join('');
+            }
+            
+            // Chat aktualisieren
+            if (lobby.chat) {
+                updateMultiplayerChatDisplay(lobby.chat);
+            }
+            
+            // URL aktualisieren
+            const newUrl = window.location.origin + window.location.pathname + '#' + lobby.code;
+            window.history.replaceState({}, '', newUrl);
+        }
+        
+        // === MULTIPLAYER CHAT AKTUALISIEREN ===
+        function updateMultiplayerChatDisplay(chatMessages) {
+            const chatContainer = document.getElementById('lobbyChatMessages');
+            if (!chatContainer || !chatMessages) return;
+            
+            chatContainer.innerHTML = chatMessages.map(msg => {
+                const time = new Date(msg.timestamp).toLocaleTimeString('de-DE', {hour: '2-digit', minute: '2-digit'});
+                const isSystem = msg.sender === 'system';
+                const isOwnMessage = msg.sender === multiplayerPlayerName;
+                
+                return `
+                    <div style="margin-bottom: 10px; padding: 8px 12px; border-radius: 12px; background: ${isSystem ? 'linear-gradient(135deg, #e3f2fd, #f3e5f5)' : isOwnMessage ? 'linear-gradient(135deg, #e8f5e8, #f1f8e9)' : 'linear-gradient(135deg, #f5f5f5, #fafafa)'}; border: 1px solid ${isSystem ? '#2196f3' : isOwnMessage ? '#4caf50' : '#ddd'};">
+                        <div style="font-size: 0.8rem; color: #666; margin-bottom: 4px; display: flex; align-items: center; gap: 8px;">
+                            <span style="font-weight: bold;">
+                                ${isSystem ? '🤖 System' : (isOwnMessage ? '👤 Du' : '👥 ' + msg.sender)}
+                            </span>
+                            <span style="opacity: 0.7;">•</span>
+                            <span>${time}</span>
+                        </div>
+                        <div style="color: #333; font-size: 0.95rem; line-height: 1.4;">
+                            ${msg.message}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            
+            // Scroll to bottom
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+        
+        // === MULTIPLAYER SPIEL CALLBACK ===
+        function startMultiplayerGameWithData(gameData) {
+            console.log('🎮 Starte lokales Spiel mit Multiplayer-Daten:', gameData);
+            
+            // Extrahiere Spiel-Einstellungen
+            const { gameSettings, players, lobby } = gameData;
+            
+            if (gameSettings && gameSettings.videoUrl) {
+                // Video-URL setzen
+                document.getElementById('videoUrl').value = gameSettings.videoUrl;
+                
+                // Schwierigkeit setzen
+                if (gameSettings.difficulty) {
+                    document.getElementById('difficulty').value = gameSettings.difficulty;
+                }
+                
+                // Spiel-Anzahl setzen
+                if (gameSettings.gameCount) {
+                    document.getElementById('gameCount').value = gameSettings.gameCount;
+                }
+            }
+            
+            // Spielernamen aus Multiplayer-Lobby übernehmen
+            if (players && players.length > 0) {
+                const playerNames = players.map(p => p.name).join(', ');
+                document.getElementById('playerNames').value = playerNames;
+            }
+            
+            // Zeige Bestätigung
+            alert(`🎮 Multiplayer-Spiel gestartet!\n\n👥 Spieler: ${players ? players.length : 'Unbekannt'}\n🎬 Video: ${gameSettings?.videoUrl ? 'Gesetzt' : 'Nicht gesetzt'}\n\n🚀 Das Spiel wird jetzt für alle Teilnehmer gestartet!`);
+            
+            // Starte normales Spiel
+            setTimeout(() => {
+                startGame();
+            }, 1000);
+        }
+        
+        // === MULTIPLAYER STATISTIKEN AKTUALISIEREN ===
+        function updateMultiplayerStats(stats) {
+            console.log('📊 Multiplayer-Statistiken:', stats);
+            
+            // Zeige Statistiken in UI falls verfügbar
+            const statsElement = document.querySelector('.multiplayer-stats');
+            if (statsElement) {
+                statsElement.innerHTML = `
+                    <div>🏠 Aktive Lobbys: ${stats.totalLobbies}</div>
+                    <div>👥 Online-Spieler: ${stats.totalPlayers}</div>
+                `;
+            }
+        }
+        
+        // Simuliertes Backend-System für Cross-Browser Lobby-Sharing
+        const LOBBY_STORAGE_KEY = 'nichtlachen_global_lobbies';
+        const LOBBY_CLEANUP_HOURS = 24; // Lobbys nach 24h automatisch löschen
+        const LOBBY_SYNC_KEY = 'nichtlachen_lobby_sync';
+        
+        // Simple "Backend" Simulation mit localStorage + BroadcastChannel
+        let lobbyBroadcast = null;
+        
+        // Initialisiere Cross-Browser-Kommunikation
+        function initializeCrossBrowserSync() {
+            try {
+                // BroadcastChannel für Cross-Tab-Kommunikation (gleicher Browser)
+                lobbyBroadcast = new BroadcastChannel('nichtlachen_lobbys');
+                
+                lobbyBroadcast.onmessage = function(event) {
+                    const { type, data } = event.data;
+                    console.log('📡 Lobby-Broadcast empfangen:', type, data);
+                    
+                    switch (type) {
+                        case 'lobby_created':
+                        case 'lobby_updated':
+                            // Lobby-Daten in lokalen Cache übernehmen
+                            syncLobbyFromBroadcast(data);
+                            break;
+                        case 'lobby_deleted':
+                            removeLobbyFromCache(data.code);
+                            break;
+                        case 'request_lobby':
+                            // Andere Tabs fragen nach spezifischer Lobby
+                            handleLobbyRequest(data.code);
+                            break;
+                        case 'request_all_lobbies':
+                            // Andere Tabs fragen nach allen Lobbys
+                            shareAllLobbies();
+                            break;
+                        case 'lobby_response':
+                            // Antwort auf Lobby-Anfrage erhalten
+                            handleLobbyResponse(data);
+                            break;
+                    }
+                };
+                
+                console.log('✅ Cross-Browser-Synchronisation aktiviert');
+                return true;
+            } catch (e) {
+                console.log('⚠️ BroadcastChannel nicht verfügbar, verwende Fallback:', e);
+                return false;
+            }
+        }
+        
+        // Auf Lobby-Anfrage antworten
+        function handleLobbyRequest(requestedCode) {
+            try {
+                const lobby = loadLobbyFromStorage(requestedCode);
+                if (lobby) {
+                    console.log(`📤 Teile Lobby ${requestedCode} mit anderen Tabs`);
+                    lobbyBroadcast.postMessage({
+                        type: 'lobby_response',
+                        data: lobby,
+                        timestamp: Date.now()
+                    });
+                }
+            } catch (e) {
+                console.error('❌ Fehler bei Lobby-Request-Handler:', e);
+            }
+        }
+        
+        // Alle verfügbaren Lobbys mit anderen teilen
+        function shareAllLobbies() {
+            try {
+                const globalLobbies = JSON.parse(localStorage.getItem(LOBBY_STORAGE_KEY) || '{}');
+                
+                Object.values(globalLobbies).forEach(lobby => {
+                    lobbyBroadcast.postMessage({
+                        type: 'lobby_response',
+                        data: lobby,
+                        timestamp: Date.now()
+                    });
+                });
+                
+                console.log(`📤 ${Object.keys(globalLobbies).length} Lobbys mit anderen Tabs geteilt`);
+            } catch (e) {
+                console.error('❌ Fehler beim Teilen aller Lobbys:', e);
+            }
+        }
+        
+        // Lobby-Antwort verarbeiten
+        function handleLobbyResponse(lobbyData) {
+            try {
+                // Empfangene Lobby in lokalen Cache einpflegen
+                syncLobbyFromBroadcast(lobbyData);
+                console.log(`📥 Lobby ${lobbyData.code} von anderem Tab empfangen`);
+            } catch (e) {
+                console.error('❌ Fehler bei Lobby-Response-Handler:', e);
+            }
+        }
+        
+        // Lobby über Broadcast-System teilen
+        function broadcastLobbyUpdate(type, lobby) {
+            if (lobbyBroadcast) {
+                try {
+                    lobbyBroadcast.postMessage({
+                        type: type,
+                        data: lobby,
+                        timestamp: Date.now()
+                    });
+                    console.log(`📡 Lobby-Broadcast gesendet: ${type}`, lobby.code);
+                } catch (e) {
+                    console.error('❌ Broadcast fehlgeschlagen:', e);
+                }
+            }
+        }
+        
+        // Lobby aus Broadcast in lokalen Cache übernehmen
+        function syncLobbyFromBroadcast(lobbyData) {
+            try {
+                const globalLobbies = JSON.parse(localStorage.getItem(LOBBY_STORAGE_KEY) || '{}');
+                globalLobbies[lobbyData.code] = lobbyData;
+                localStorage.setItem(LOBBY_STORAGE_KEY, JSON.stringify(globalLobbies));
+                
+                console.log(`✅ Lobby ${lobbyData.code} aus Broadcast synchronisiert`);
+                
+                // UI aktualisieren falls wir in dieser Lobby sind
+                if (currentLobby && currentLobby.code === lobbyData.code) {
+                    currentLobby = lobbyData;
+                    updateLobbyDisplay();
+                }
+            } catch (e) {
+                console.error('❌ Fehler bei Broadcast-Sync:', e);
+            }
+        }
+        
+        // Lobby aus Cache entfernen
+        function removeLobbyFromCache(lobbyCode) {
+            try {
+                const globalLobbies = JSON.parse(localStorage.getItem(LOBBY_STORAGE_KEY) || '{}');
+                delete globalLobbies[lobbyCode];
+                localStorage.setItem(LOBBY_STORAGE_KEY, JSON.stringify(globalLobbies));
+                console.log(`🗑️ Lobby ${lobbyCode} aus Cache entfernt`);
+            } catch (e) {
+                console.error('❌ Fehler beim Cache-Cleanup:', e);
+            }
+        }
+
+        // Lobby anzeigen
+        function showOnlineLobby() {
+            const modal = document.getElementById('onlineLobbyModal');
+            modal.style.display = 'flex';
+            modal.style.animation = 'fadeIn 0.4s ease';
+            
+            // Spielername abfragen wenn noch nicht gesetzt
+            if (!playerName) {
+                setTimeout(() => {
+                    playerName = prompt('🎮 Wie ist dein Name?', 'Spieler') || 'Spieler';
+                }, 500);
+            }
+        }
+
+        function closeOnlineLobby() {
+            const modal = document.getElementById('onlineLobbyModal');
+            modal.style.animation = 'fadeOut 0.3s ease';
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 300);
+            
+            // Lobby-Verbindung beenden
+            if (currentLobby) {
+                leaveLobby();
+            }
+        }
+
+
+
+        // Lobby beitreten (Original-Funktion aktualisiert)
+        function joinLobby() {
+            joinLobbyWithCode();
+        }
+
+        // Lobby-Raum anzeigen
+        function showLobbyRoom() {
+            document.getElementById('lobbyContent').querySelector('div').style.display = 'none';
+            document.getElementById('lobbyRoom').style.display = 'block';
+            document.getElementById('leaveLobbyBtn').style.display = 'inline-block';
+            
+            document.getElementById('lobbyCodeDisplay').textContent = currentLobby.code;
+            
+            if (isHost) {
+                document.getElementById('hostControls').style.display = 'block';
+                document.getElementById('lobbyStatus').textContent = 'Du bist der Host';
+            } else {
+                document.getElementById('hostControls').style.display = 'none';
+                document.getElementById('lobbyStatus').textContent = `Host: ${currentLobby.host}`;
+            }
+            
+            updateLobbyDisplay();
+        }
+
+        // Lobby-Anzeige aktualisieren
+        function updateLobbyDisplay() {
+            if (!currentLobby) return;
+            
+            // Spielerliste aktualisieren
+            const playersList = document.getElementById('lobbyPlayersList');
+            playersList.innerHTML = currentLobby.players.map(player => `
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px; margin-bottom: 5px; background: ${player.isHost ? 'linear-gradient(135deg, #ffd700, #ffed4e)' : '#f5f5f5'}; border-radius: 8px; color: ${player.isHost ? '#333' : '#666'};">
+                    <span>
+                        ${player.isHost ? '👑' : '👤'} ${player.name}
+                        ${player.isHost ? ' (Host)' : ''}
+                    </span>
+                    <span style="font-size: 0.8rem; opacity: 0.8;">
+                        ${player.joinedAt ? 'Beigetreten: ' + new Date(player.joinedAt).toLocaleTimeString('de-DE', {hour: '2-digit', minute: '2-digit'}) : ''}
+                    </span>
+                </div>
+            `).join('');
+            
+            // Chat aktualisieren
+            updateChatDisplay();
+        }
+
+        // Chat-Nachricht senden
+        function sendChatMessage() {
+            const input = document.getElementById('chatInput');
+            const message = input.value.trim();
+            
+            if (!message || !currentLobby) return;
+            
+            addChatMessage(message, playerName);
+            input.value = '';
+            
+            saveLobbyToStorage();
+        }
+
+        // Chat-Nachricht hinzufügen
+        function addChatMessage(message, sender) {
+            if (!currentLobby) return;
+            
+            currentLobby.chat.push({
+                message: message,
+                sender: sender,
+                timestamp: Date.now()
+            });
+            
+            // Nur die letzten 50 Nachrichten behalten
+            if (currentLobby.chat.length > 50) {
+                currentLobby.chat = currentLobby.chat.slice(-50);
+            }
+            
+            updateChatDisplay();
+        }
+
+        // Chat-Anzeige aktualisieren
+        function updateChatDisplay() {
+            if (!currentLobby) return;
+            
+            const chatContainer = document.getElementById('lobbyChatMessages');
+            chatContainer.innerHTML = currentLobby.chat.map(msg => {
+                const time = new Date(msg.timestamp).toLocaleTimeString('de-DE', {hour: '2-digit', minute: '2-digit'});
+                const isSystem = msg.sender === 'system';
+                const isOwnMessage = msg.sender === playerName;
+                
+                return `
+                    <div style="margin-bottom: 8px; padding: 5px 8px; border-radius: 8px; background: ${isSystem ? '#e3f2fd' : isOwnMessage ? '#e8f5e8' : '#f5f5f5'};">
+                        <div style="font-size: 0.8rem; color: #666; margin-bottom: 2px;">
+                            ${isSystem ? '🤖 System' : msg.sender} • ${time}
+                        </div>
+                        <div style="color: #333; font-size: 0.9rem;">${msg.message}</div>
+                    </div>
+                `;
+            }).join('');
+            
+            // Scroll to bottom
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+
+        // Online-Spiel starten (nur Host)
+        function startOnlineGame() {
+            if (!isHost || !currentLobby) {
+                alert('🚫 Nur der Host kann das Spiel starten!');
+                return;
+            }
+            
+            if (currentLobby.players.length < 2) {
+                alert('⚠️ Mindestens 2 Spieler werden benötigt!');
+                return;
+            }
+            
+            // Spieler-Namen aus Lobby übernehmen
+            const playerNames = currentLobby.players.map(p => p.name).join(', ');
+            document.getElementById('playerNames').value = playerNames;
+            
+            addChatMessage(`🚀 Das Spiel wird gestartet! Alle Spieler sollten die lokale Spieler-Eingabe verwenden.`, 'system');
+            
+            alert(`🎮 Spiel wird für alle ${currentLobby.players.length} Spieler gestartet!\n\nJeder Spieler sollte jetzt seine eigenen "Hat gelacht"-Buttons verwenden.`);
+            
+            currentLobby.gameState = 'playing';
+            saveLobbyToStorage();
+            
+            closeOnlineLobby();
+            
+            // Spiel normal starten
+            setTimeout(() => {
+                startGame();
+            }, 1000);
+        }
+
+        // Video synchronisieren (nur Host)
+        function syncVideo() {
+            if (!isHost) {
+                alert('🚫 Nur der Host kann Videos synchronisieren!');
+                return;
+            }
+            
+            const videoUrl = document.getElementById('videoUrl').value.trim();
+            if (!videoUrl) {
+                alert('⚠️ Bitte wähle zuerst ein Video aus!');
+                return;
+            }
+            
+            addChatMessage(`🎬 Video synchronisiert: ${videoUrl}`, 'system');
+            alert('✅ Video wurde für alle Spieler synchronisiert!\n\nAlle Spieler sollten das gleiche Video verwenden.');
+            
+            currentLobby.syncedVideo = videoUrl;
+            saveLobbyToStorage();
+        }
+
+        // Spieler entfernen (nur Host)
+        function kickPlayer() {
+            if (!isHost) {
+                alert('🚫 Nur der Host kann Spieler entfernen!');
+                return;
+            }
+            
+            const playerNames = currentLobby.players
+                .filter(p => !p.isHost)
+                .map(p => p.name);
+            
+            if (playerNames.length === 0) {
+                alert('ℹ️ Keine Spieler zum Entfernen vorhanden.');
+                return;
+            }
+            
+            const playerToKick = prompt(`Welchen Spieler möchtest du entfernen?\n\nVerfügbare Spieler:\n${playerNames.join('\n')}\n\nGib den Namen ein:`);
+            
+            if (!playerToKick) return;
+            
+            const playerIndex = currentLobby.players.findIndex(p => p.name === playerToKick && !p.isHost);
+            
+            if (playerIndex === -1) {
+                alert('❌ Spieler nicht gefunden oder du kannst dich nicht selbst entfernen!');
+                return;
+            }
+            
+            currentLobby.players.splice(playerIndex, 1);
+            addChatMessage(`🚫 ${playerToKick} wurde aus der Lobby entfernt.`, 'system');
+            
+            saveLobbyToStorage();
+            updateLobbyDisplay();
+            
+            alert(`✅ ${playerToKick} wurde entfernt.`);
+        }
+
+        // Lobby verlassen
+        function leaveLobby() {
+            if (!currentLobby) return;
+            
+            if (isHost) {
+                if (confirm('👑 Du bist der Host! Wenn du die Lobby verlässt, wird sie geschlossen.\n\nMöchtest du wirklich verlassen?')) {
+                    // Lobby aus globalem Storage entfernen
+                    removeLobbyFromStorage(currentLobby.code);
+                    addChatMessage(`🚪 Host ${playerName} hat die Lobby geschlossen.`, 'system');
+                }
+            } else {
+                // Spieler aus Lobby entfernen
+                currentLobby.players = currentLobby.players.filter(p => p.name !== playerName);
+                addChatMessage(`🚪 ${playerName} hat die Lobby verlassen.`, 'system');
+                saveLobbyToStorage();
+            }
+            
+            // Cleanup
+            currentLobby = null;
+            isHost = false;
+            
+            if (lobbyInterval) {
+                clearInterval(lobbyInterval);
+                lobbyInterval = null;
+            }
+            
+            // UI zurücksetzen
+            document.getElementById('lobbyContent').querySelector('div').style.display = 'block';
+            document.getElementById('lobbyRoom').style.display = 'none';
+            document.getElementById('leaveLobbyBtn').style.display = 'none';
+            
+            alert('✅ Lobby verlassen.');
+        }
+
+        // Lobby-Polling starten
+        function startLobbyPolling() {
+            if (lobbyInterval) clearInterval(lobbyInterval);
+            
+            lobbyInterval = setInterval(() => {
+                if (!currentLobby) {
+                    clearInterval(lobbyInterval);
+                    return;
+                }
+                
+                // Aktuelle Lobby-Daten laden
+                const updatedLobby = loadLobbyFromStorage(currentLobby.code);
+                
+                if (!updatedLobby) {
+                    alert('🚫 Lobby wurde geschlossen oder ist nicht mehr verfügbar!');
+                    leaveLobby();
+                    closeOnlineLobby();
+                    return;
+                }
+                
+                // Prüfen ob eigener Spieler noch in der Lobby ist
+                if (!updatedLobby.players.some(p => p.name === playerName)) {
+                    alert('🚫 Du wurdest aus der Lobby entfernt!');
+                    leaveLobby();
+                    closeOnlineLobby();
+                    return;
+                }
+                
+                currentLobby = updatedLobby;
+                updateLobbyDisplay();
+                
+            }, 2000); // Alle 2 Sekunden aktualisieren
+        }
+
+        // Lobby in Storage speichern (Vereinfachtes aber robustes System)
+        function saveLobbyToStorage() {
+            if (!currentLobby) return;
+            
+            try {
+                console.log(`💾 Speichere Lobby ${currentLobby.code}...`);
+                
+                // Alle globalen Lobbys laden
+                let globalLobbies = JSON.parse(localStorage.getItem(LOBBY_STORAGE_KEY) || '{}');
+                
+                // Alte Lobbys bereinigen (älter als LOBBY_CLEANUP_HOURS)
+                const now = Date.now();
+                const maxAge = LOBBY_CLEANUP_HOURS * 60 * 60 * 1000;
+                
+                Object.keys(globalLobbies).forEach(code => {
+                    if (now - globalLobbies[code].lastActivity > maxAge) {
+                        delete globalLobbies[code];
+                        console.log(`🧹 Alte Lobby ${code} bereinigt`);
+                    }
+                });
+                
+                // Aktuelle Lobby hinzufügen/aktualisieren
+                currentLobby.lastActivity = now;
+                globalLobbies[currentLobby.code] = JSON.parse(JSON.stringify(currentLobby)); // Deep Copy
+                
+                // Zurück speichern
+                localStorage.setItem(LOBBY_STORAGE_KEY, JSON.stringify(globalLobbies));
+                
+                // Zusätzlich als separate Backup speichern
+                localStorage.setItem(`lobby_${currentLobby.code}`, JSON.stringify(currentLobby));
+                
+                console.log(`✅ Lobby ${currentLobby.code} erfolgreich gespeichert`);
+                console.log(`📊 Aktuelle Lobbys im Storage:`, Object.keys(globalLobbies));
+                
+                // Über Broadcast an andere Tabs/Browser teilen
+                broadcastLobbyUpdate('lobby_updated', currentLobby);
+                
+                // Zusätzlich: "Pseudo-Online" Speicher für bessere Cross-Session Persistierung
+                saveToTemporaryOnlineStorage(currentLobby);
+                
+            } catch (e) {
+                console.error('❌ Fehler beim Speichern der Lobby:', e);
+                // Fallback: Nur einzelne Lobby speichern
+                try {
+                    localStorage.setItem(`lobby_${currentLobby.code}`, JSON.stringify(currentLobby));
+                    console.log(`⚠️ Fallback-Speicherung für Lobby ${currentLobby.code} erfolgreich`);
+                } catch (fallbackError) {
+                    console.error('❌ Auch Fallback-Speicherung fehlgeschlagen:', fallbackError);
+                }
+            }
+        }
+
+        // Temporärer "Online"-Speicher für bessere Persistierung
+        function saveToTemporaryOnlineStorage(lobby) {
+            try {
+                // Verwende ein längeres localStorage-System mit timestamp
+                const onlineKey = `online_lobby_${lobby.code}`;
+                const onlineData = {
+                    lobby: lobby,
+                    created: Date.now(),
+                    lastSync: Date.now(),
+                    version: Math.random().toString(36).substr(2, 9)
+                };
+                
+                localStorage.setItem(onlineKey, JSON.stringify(onlineData));
+                
+                // Erstelle "Server-Index" für bessere Suche
+                const serverIndex = JSON.parse(localStorage.getItem('nichtlachen_server_index') || '{}');
+                serverIndex[lobby.code] = {
+                    host: lobby.host,
+                    playerCount: lobby.players?.length || 0,
+                    created: lobby.created,
+                    lastActivity: lobby.lastActivity,
+                    version: onlineData.version
+                };
+                localStorage.setItem('nichtlachen_server_index', JSON.stringify(serverIndex));
+                
+                console.log(`🌐 Lobby ${lobby.code} in Pseudo-Online-Speicher gesichert`);
+            } catch (e) {
+                console.error('❌ Pseudo-Online-Speicher Fehler:', e);
+            }
+        }
+
+        // Lobby aus Storage laden (Verbessertes Cross-Browser System)
+        function loadLobbyFromStorage(lobbyCode) {
+            console.log(`🔍 Suche Lobby ${lobbyCode} in allen verfügbaren Speichern...`);
+            
+            try {
+                // 1. Erst im globalen System suchen
+                const globalLobbies = JSON.parse(localStorage.getItem(LOBBY_STORAGE_KEY) || '{}');
+                
+                if (globalLobbies[lobbyCode]) {
+                    console.log(`✅ Lobby ${lobbyCode} im globalen System gefunden`);
+                    return globalLobbies[lobbyCode];
+                }
+                
+                // 2. Im Pseudo-Online-Speicher suchen
+                const onlineKey = `online_lobby_${lobbyCode}`;
+                const onlineData = localStorage.getItem(onlineKey);
+                if (onlineData) {
+                    const parsed = JSON.parse(onlineData);
+                    console.log(`✅ Lobby ${lobbyCode} im Online-Speicher gefunden`);
+                    
+                    // In globales System migrieren
+                    globalLobbies[lobbyCode] = parsed.lobby;
+                    localStorage.setItem(LOBBY_STORAGE_KEY, JSON.stringify(globalLobbies));
+                    
+                    return parsed.lobby;
+                }
+                
+                // 3. Im Server-Index suchen und rekonstruieren
+                const serverIndex = JSON.parse(localStorage.getItem('nichtlachen_server_index') || '{}');
+                if (serverIndex[lobbyCode]) {
+                    console.log(`📋 Lobby ${lobbyCode} im Server-Index gefunden, versuche Rekonstruktion...`);
+                    
+                    // Versuche Lobby aus verschiedenen Quellen zu rekonstruieren
+                    const reconstructedLobby = reconstructLobbyFromIndex(lobbyCode, serverIndex[lobbyCode]);
+                    if (reconstructedLobby) {
+                        return reconstructedLobby;
+                    }
+                }
+                
+                // 4. Fallback: Alte Legacy-Methode versuchen
+                const fallbackData = localStorage.getItem(`lobby_${lobbyCode}`);
+                if (fallbackData) {
+                    console.log(`✅ Lobby ${lobbyCode} im Legacy-System gefunden`);
+                    const lobby = JSON.parse(fallbackData);
+                    
+                    // In neues System migrieren
+                    globalLobbies[lobbyCode] = lobby;
+                    localStorage.setItem(LOBBY_STORAGE_KEY, JSON.stringify(globalLobbies));
+                    localStorage.removeItem(`lobby_${lobbyCode}`); // Alte Version löschen
+                    
+                    return lobby;
+                }
+                
+                // 5. Alle anderen Tabs/Browser fragen (via Broadcast)
+                requestLobbyFromOtherSources(lobbyCode);
+                
+                console.log(`❌ Lobby ${lobbyCode} in keinem Speicher gefunden`);
+                return null;
+                
+            } catch (e) {
+                console.error('❌ Fehler beim Laden der Lobby:', e);
+                return null;
+            }
+        }
+        
+        // Lobby aus Index rekonstruieren
+        function reconstructLobbyFromIndex(lobbyCode, indexData) {
+            try {
+                // Basis-Lobby aus Index-Daten erstellen
+                const reconstructed = {
+                    code: lobbyCode,
+                    host: indexData.host,
+                    players: [{ 
+                        name: indexData.host, 
+                        isHost: true, 
+                        id: Date.now(),
+                        joinedAt: indexData.created 
+                    }],
+                    created: indexData.created,
+                    lastActivity: indexData.lastActivity || Date.now(),
+                    gameState: 'waiting',
+                    chat: [{
+                        message: '🔄 Lobby wurde automatisch rekonstruiert.',
+                        sender: 'system',
+                        timestamp: Date.now()
+                    }]
+                };
+                
+                console.log(`🔧 Lobby ${lobbyCode} erfolgreich rekonstruiert`);
+                return reconstructed;
+            } catch (e) {
+                console.error('❌ Lobby-Rekonstruktion fehlgeschlagen:', e);
+                return null;
+            }
+        }
+        
+        // Andere Quellen nach Lobby fragen
+        function requestLobbyFromOtherSources(lobbyCode) {
+            if (lobbyBroadcast) {
+                try {
+                    // Frage andere Tabs nach der Lobby
+                    lobbyBroadcast.postMessage({
+                        type: 'request_lobby',
+                        data: { code: lobbyCode },
+                        timestamp: Date.now()
+                    });
+                    console.log(`📡 Lobby-Request für ${lobbyCode} gesendet`);
+                } catch (e) {
+                    console.error('❌ Lobby-Request fehlgeschlagen:', e);
+                }
+            }
+        }
+
+        // Alle aktiven Lobbys auflisten (Erweiterte Debug/Info-Funktion)
+        function listActiveLobbies() {
+            try {
+                let totalLobbies = 0;
+                
+                // 1. Globale Lobbys
+                const globalLobbies = JSON.parse(localStorage.getItem(LOBBY_STORAGE_KEY) || '{}');
+                const now = Date.now();
+                
+                console.log('🏠 Aktive Lobbys (Globaler Speicher):');
+                Object.entries(globalLobbies).forEach(([code, lobby]) => {
+                    const ageMinutes = Math.floor((now - lobby.lastActivity) / (1000 * 60));
+                    console.log(`  • ${code}: ${lobby.players?.length || 0} Spieler, Host: ${lobby.host}, ${ageMinutes}min alt`);
+                    totalLobbies++;
+                });
+                
+                // 2. Server-Index prüfen
+                const serverIndex = JSON.parse(localStorage.getItem('nichtlachen_server_index') || '{}');
+                console.log('📋 Server-Index Einträge:');
+                Object.entries(serverIndex).forEach(([code, indexData]) => {
+                    if (!globalLobbies[code]) { // Nur zeigen wenn nicht bereits in globalen Lobbys
+                        const ageMinutes = Math.floor((now - indexData.lastActivity) / (1000 * 60));
+                        console.log(`  • ${code}: ${indexData.playerCount} Spieler, Host: ${indexData.host}, ${ageMinutes}min alt (nur Index)`);
+                        totalLobbies++;
+                    }
+                });
+                
+                // 3. Online-Speicher durchsuchen
+                let onlineCount = 0;
+                for (let i = 0; i < localStorage.length; i++) {
+                    const key = localStorage.key(i);
+                    if (key && key.startsWith('online_lobby_')) {
+                        const code = key.replace('online_lobby_', '');
+                        if (!globalLobbies[code] && !serverIndex[code]) {
+                            console.log(`  • ${code}: Im Online-Speicher gefunden`);
+                            onlineCount++;
+                        }
+                    }
+                }
+                
+                if (onlineCount > 0) {
+                    console.log(`🌐 ${onlineCount} weitere Lobbys im Online-Speicher`);
+                    totalLobbies += onlineCount;
+                }
+                
+                console.log(`📊 Gesamt: ${totalLobbies} verfügbare Lobbys`);
+                return totalLobbies;
+                
+            } catch (e) {
+                console.error('❌ Fehler beim Auflisten der Lobbys:', e);
+                return 0;
+            }
+        }
+
+        // Lobby aus globalem System entfernen (Erweitert)
+        function removeLobbyFromStorage(lobbyCode) {
+            try {
+                // Aus allen Speichern entfernen
+                const globalLobbies = JSON.parse(localStorage.getItem(LOBBY_STORAGE_KEY) || '{}');
+                delete globalLobbies[lobbyCode];
+                localStorage.setItem(LOBBY_STORAGE_KEY, JSON.stringify(globalLobbies));
+                
+                // Aus Server-Index entfernen
+                const serverIndex = JSON.parse(localStorage.getItem('nichtlachen_server_index') || '{}');
+                delete serverIndex[lobbyCode];
+                localStorage.setItem('nichtlachen_server_index', JSON.stringify(serverIndex));
+                
+                // Aus Online-Speicher entfernen
+                localStorage.removeItem(`online_lobby_${lobbyCode}`);
+                
+                // Aus Legacy-System entfernen
+                localStorage.removeItem(`lobby_${lobbyCode}`);
+                
+                // Über Broadcast anderen mitteilen
+                broadcastLobbyUpdate('lobby_deleted', { code: lobbyCode });
+                
+                console.log(`✅ Lobby ${lobbyCode} aus allen Speichern entfernt`);
+            } catch (e) {
+                console.error('❌ Fehler beim Entfernen der Lobby:', e);
+            }
+        }
+
+        // URL-Parameter auslesen und automatisch Lobby beitreten (Verbessert)
+        function checkUrlParameters() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const lobbyCodeFromUrl = urlParams.get('lobby') || urlParams.get('code') || urlParams.get('join');
+            
+            // Überprüfe auch Hash-Fragment für Lobby-Code (z.B. #ABC123)
+            let lobbyCodeFromHash = window.location.hash.replace('#', '').toUpperCase();
+            
+            // Lobby-Code aus URL oder Hash
+            const lobbyCode = lobbyCodeFromUrl || lobbyCodeFromHash;
+            
+            console.log('🔗 URL-Parameter Check:', {
+                search: window.location.search,
+                hash: window.location.hash,
+                foundCode: lobbyCode
+            });
+            
+            if (lobbyCode && lobbyCode.length >= 4) {
+                console.log('🔗 Lobby-Code in URL gefunden:', lobbyCode);
+                
+                // Kurz warten, dann automatisch Lobby-Modal öffnen und beitreten
+                setTimeout(() => {
+                    // Spielername abfragen
+                    if (!playerName) {
+                        playerName = prompt('🎮 Wie ist dein Name für die Lobby?', 'Spieler') || 'Spieler';
+                    }
+                    
+                    // Lobby-Code ins Eingabefeld eintragen
+                    document.getElementById('lobbyCodeInput').value = lobbyCode;
+                    
+                    // Online-Lobby Modal öffnen
+                    showOnlineLobby();
+                    
+                    // Nach einer kurzen Verzögerung automatisch beitreten
+                    setTimeout(() => {
+                        joinLobbyWithCode(lobbyCode);
+                    }, 1000);
+                    
+                }, 1500); // 1.5 Sekunden warten damit die Seite vollständig geladen ist
+            } else {
+                // Auch ohne URL-Parameter: Debug-Info über verfügbare Lobbys
+                setTimeout(() => {
+                    const activeCount = listActiveLobbies();
+                    if (activeCount > 0) {
+                        console.log(`ℹ️ ${activeCount} aktive Lobbys gefunden beim Seitenaufruf`);
+                    }
+                }, 2000);
+            }
+        }
+
+        // Automatische Lobby-Bereinigung beim Seitenaufruf (Erweitert)
+        function initializeLobbySystem() {
+            console.log('🚀 Lobby-System wird initialisiert...');
+            
+            try {
+                // Cross-Browser-Synchronisation starten
+                const broadcastAvailable = initializeCrossBrowserSync();
+                
+                // Alte Lobbys beim Start bereinigen
+                const globalLobbies = JSON.parse(localStorage.getItem(LOBBY_STORAGE_KEY) || '{}');
+                const serverIndex = JSON.parse(localStorage.getItem('nichtlachen_server_index') || '{}');
+                const now = Date.now();
+                const maxAge = LOBBY_CLEANUP_HOURS * 60 * 60 * 1000;
+                let cleanedCount = 0;
+                
+                // Globale Lobbys bereinigen
+                Object.keys(globalLobbies).forEach(code => {
+                    if (now - globalLobbies[code].lastActivity > maxAge) {
+                        delete globalLobbies[code];
+                        cleanedCount++;
+                    }
+                });
+                
+                // Server-Index bereinigen
+                Object.keys(serverIndex).forEach(code => {
+                    if (now - serverIndex[code].lastActivity > maxAge) {
+                        delete serverIndex[code];
+                        localStorage.removeItem(`online_lobby_${code}`);
+                        cleanedCount++;
+                    }
+                });
+                
+                // Bereinigungen speichern
+                if (cleanedCount > 0) {
+                    localStorage.setItem(LOBBY_STORAGE_KEY, JSON.stringify(globalLobbies));
+                    localStorage.setItem('nichtlachen_server_index', JSON.stringify(serverIndex));
+                    console.log(`🧹 ${cleanedCount} alte Lobbys bereinigt`);
+                }
+                
+                // Synchronisation mit anderen Sessions versuchen
+                if (broadcastAvailable) {
+                    // Nach 2 Sekunden alle verfügbaren Lobbys anfragen
+                    setTimeout(() => {
+                        requestAllLobbiesFromOtherSources();
+                    }, 2000);
+                }
+                
+                const remainingCount = listActiveLobbies();
+                console.log(`✅ Lobby-System bereit. ${remainingCount} aktive Lobbys verfügbar.`);
+                console.log(`📡 Cross-Browser-Sync: ${broadcastAvailable ? 'Aktiviert' : 'Fallback-Modus'}`);
+                
+                return remainingCount;
+                
+            } catch (e) {
+                console.error('❌ Fehler bei Lobby-System-Initialisierung:', e);
+                return 0;
+            }
+        }
+        
+        // Alle Lobbys von anderen Quellen anfragen
+        function requestAllLobbiesFromOtherSources() {
+            if (lobbyBroadcast) {
+                try {
+                    lobbyBroadcast.postMessage({
+                        type: 'request_all_lobbies',
+                        data: {},
+                        timestamp: Date.now()
+                    });
+                    console.log('📡 Anfrage für alle verfügbaren Lobbys gesendet');
+                } catch (e) {
+                    console.error('❌ Lobby-Sync-Request fehlgeschlagen:', e);
+                }
+            }
+        }
+
+        // Verbesserte Lobby-Beitreten Funktion mit erweitertem Debugging und Cross-Browser-Support
+        function joinLobbyWithCode(lobbyCode) {
+            if (!lobbyCode) {
+                lobbyCode = document.getElementById('lobbyCodeInput').value.trim().toUpperCase();
+            }
+            
+            if (!lobbyCode) {
+                alert('🚨 Bitte gib einen Lobby-Code ein!');
+                return;
+            }
+            
+            console.log(`🔍 Starte Lobby-Suche für Code: ${lobbyCode}`);
+            
+            if (!playerName) {
+                playerName = prompt('🎮 Wie ist dein Name?', 'Spieler') || 'Spieler';
+            }
+            
+            // Debug: Aktive Lobbys anzeigen
+            const activeLobbies = listActiveLobbies();
+            console.log(`📊 ${activeLobbies} aktive Lobbys vor der Suche`);
+            
+            // Lobby aus allen verfügbaren Speichern laden
+            let lobby = loadLobbyFromStorage(lobbyCode);
+            
+            // Falls nicht gefunden, kurz warten und andere Quellen abfragen
+            if (!lobby) {
+                console.log(`⏳ Lobby nicht sofort gefunden, versuche Synchronisation...`);
+                
+                // Andere Tabs/Browser nach der Lobby fragen
+                requestLobbyFromOtherSources(lobbyCode);
+                
+                // Kurz warten und erneut versuchen
+                setTimeout(() => {
+                    lobby = loadLobbyFromStorage(lobbyCode);
+                    
+                    if (lobby) {
+                        console.log(`✅ Lobby nach Synchronisation gefunden!`);
+                        proceedWithLobbyJoin(lobby, lobbyCode);
+                    } else {
+                        showLobbyNotFoundError(lobbyCode, activeLobbies);
+                    }
+                }, 2000);
+                
+                return; // Warten auf Sync-Antwort
+            }
+            
+            // Lobby sofort gefunden
+            proceedWithLobbyJoin(lobby, lobbyCode);
+        }
+        
+        // Lobby-Beitritt fortsetzen
+        function proceedWithLobbyJoin(lobby, lobbyCode) {
+            console.log(`✅ Lobby gefunden:`, lobby);
+            
+            // Prüfen ob Spieler bereits dabei ist
+            if (lobby.players && lobby.players.some(p => p.name === playerName)) {
+                alert(`⚠️ Ein Spieler mit dem Namen "${playerName}" ist bereits in der Lobby!\n\nBitte wähle einen anderen Namen.`);
+                playerName = prompt('🎮 Wähle einen anderen Namen:', playerName + '2') || playerName + '2';
+                // Erneut versuchen mit neuem Namen
+                joinLobbyWithCode(lobbyCode);
+                return;
+            }
+            
+            // Spieler zur Lobby hinzufügen
+            if (!lobby.players) lobby.players = [];
+            lobby.players.push({
+                name: playerName,
+                isHost: false,
+                id: Date.now(),
+                joinedAt: Date.now()
+            });
+            
+            currentLobby = lobby;
+            isHost = false;
+            
+            // Chat-Nachricht hinzufügen
+            addChatMessage(`🎉 ${playerName} ist der Lobby beigetreten!`, 'system');
+            
+            saveLobbyToStorage();
+            showLobbyRoom();
+            
+            // Erfolgreiche Bestätigung
+            const welcomeMsg = `✅ Erfolgreich der Lobby beigetreten!\n\n` +
+                             `🏠 Host: ${lobby.host}\n` +
+                             `👥 Spieler: ${lobby.players.length}\n` +
+                             `🔗 Code: ${lobbyCode}\n\n` +
+                             `Willkommen bei der Nicht Lachen Challenge!`;
+            alert(welcomeMsg);
+            
+            // URL aktualisieren ohne Reload
+            const newUrl = window.location.origin + window.location.pathname + '#' + lobbyCode;
+            window.history.replaceState({}, '', newUrl);
+            
+            // Polling starten
+            startLobbyPolling();
+        }
+        
+        // Erweiterte Fehlermeldung wenn Lobby nicht gefunden
+        function showLobbyNotFoundError(lobbyCode, availableLobbies) {
+            const isFromUrl = window.location.search.includes(lobbyCode) || window.location.hash.includes(lobbyCode);
+            
+            // Erweiterte Debugging-Info für URLs
+            if (isFromUrl) {
+                console.log(`❌ URL-Join fehlgeschlagen für Code: ${lobbyCode}`);
+                console.log(`🔗 Current URL: ${window.location.href}`);
+                console.log(`📝 Search params:`, window.location.search);
+                console.log(`#️⃣ Hash:`, window.location.hash);
+                console.log(`📊 Verfügbare Lobbys: ${availableLobbies}`);
+            }
+            
+            const errorMsg = isFromUrl ? 
+                `🚫 Lobby "${lobbyCode}" nicht gefunden!\n\n` +
+                `🔍 Mögliche Gründe:\n` +
+                `• Die Lobby wurde bereits geschlossen\n` +
+                `• Der Code ist abgelaufen (>24h alt)\n` +
+                `• Der Host hat das Spiel beendet\n` +
+                `• Cross-Browser-Synchronisation fehlgeschlagen\n` +
+                `• Temporäre Browser-Daten wurden gelöscht\n\n` +
+                `💡 Lösungsvorschläge:\n` +
+                `• Bitte den Host um einen neuen Link\n` +
+                `• Prüfe ob der Host noch online ist\n` +
+                `• Versuche es in einem neuen Tab\n\n` +
+                `🔧 Debug-Info: ${availableLobbies} andere Lobbys verfügbar` :
+                `🚫 Lobby "${lobbyCode}" nicht gefunden!\n\n` +
+                `Überprüfe den Code oder bitte den Host, eine neue Lobby zu erstellen.\n\n` +
+                `🔍 Debug-Info: ${availableLobbies} aktive Lobbys verfügbar\n\n` +
+                `💡 Tipp: Stelle sicher, dass der Host die Lobby\n` +
+                `noch geöffnet hat und online ist.`;
+                
+            alert(errorMsg);
+        }
+
+        // === VERBESSERTE LOBBY-FUNKTIONEN (mit Socket.IO Integration) ===
+        
+        function createLobby() {
+            console.log('🏠 Erstelle Lobby...');
+            
+            // Versuche echtes Multiplayer-System
+            if (multiplayerClient && multiplayerClient.isConnected) {
+                createMultiplayerLobby();
+            } else {
+                // Fallback auf altes System
+                console.log('⚠️ Multiplayer-Client nicht verfügbar, verwende Fallback-System');
+                createLocalLobby();
+            }
+        }
+        
+        function joinLobby() {
+            const lobbyCode = document.getElementById('lobbyCodeInput').value.trim().toUpperCase();
+            
+            console.log('👥 Trete Lobby bei:', lobbyCode);
+            
+            // Versuche echtes Multiplayer-System
+            if (multiplayerClient && multiplayerClient.isConnected) {
+                joinMultiplayerLobby(lobbyCode);
+            } else {
+                // Fallback auf altes System
+                console.log('⚠️ Multiplayer-Client nicht verfügbar, verwende Fallback-System');
+                joinLobbyWithCode(lobbyCode);
+            }
+        }
+        
+        function leaveLobby() {
+            console.log('🚪 Verlasse Lobby...');
+            
+            // Versuche echtes Multiplayer-System
+            if (multiplayerClient && multiplayerClient.isInLobby()) {
+                leaveMultiplayerLobby();
+            } else {
+                // Fallback auf altes System
+                leaveLocalLobby();
+            }
+        }
+        
+        function sendChatMessage() {
+            // Versuche echtes Multiplayer-System
+            if (multiplayerClient && multiplayerClient.isInLobby()) {
+                sendMultiplayerChatMessage();
+            } else {
+                // Fallback auf altes System
+                sendLocalChatMessage();
+            }
+        }
+        
+        function startOnlineGame() {
+            console.log('🎮 Starte Online-Spiel...');
+            
+            // Versuche echtes Multiplayer-System
+            if (multiplayerClient && multiplayerClient.isInLobby()) {
+                startMultiplayerGame();
+            } else {
+                // Fallback auf altes System
+                startLocalOnlineGame();
+            }
+        }
+        
+        function kickPlayer() {
+            console.log('🚫 Entferne Spieler...');
+            
+            // Versuche echtes Multiplayer-System
+            if (multiplayerClient && multiplayerClient.isLobbyHost()) {
+                kickMultiplayerPlayer();
+            } else {
+                // Fallback auf altes System
+                kickLocalPlayer();
+            }
+        }
+            console.log('🚀 Starte Lobby-Erstellung...');
+            
+            if (!playerName) {
+                playerName = prompt('🎮 Wie ist dein Name?', 'Spieler') || 'Spieler';
+            }
+            
+            // Zufälligen Lobby-Code generieren (länger für bessere Eindeutigkeit)
+            const lobbyCode = Math.random().toString(36).substring(2, 8).toUpperCase();
+            console.log(`🆔 Generierter Lobby-Code: ${lobbyCode}`);
+            
+            currentLobby = {
+                code: lobbyCode,
+                host: playerName,
+                players: [{ name: playerName, isHost: true, id: Date.now(), joinedAt: Date.now() }],
+                created: Date.now(),
+                lastActivity: Date.now(),
+                gameState: 'waiting',
+                chat: [{
+                    message: `🎉 Lobby "${lobbyCode}" wurde erstellt!`,
+                    sender: 'system',
+                    timestamp: Date.now()
+                }]
+            };
+            
+            isHost = true;
+            console.log('🏠 Lobby-Objekt erstellt:', currentLobby);
+            
+            // Sofort vor dem Speichern prüfen
+            console.log('💾 LocalStorage vor Speicherung:', Object.keys(localStorage));
+            
+            // Lobby in alle Speichersysteme eintragen
+            saveLobbyToStorage();
+            
+            // Sofort nach dem Speichern prüfen
+            console.log('💾 LocalStorage nach Speicherung:', Object.keys(localStorage));
+            console.log('🔍 Speicher-Check direkt nach Erstellung:');
+            const checkResult = loadLobbyFromStorage(lobbyCode);
+            console.log('✅ Lobby gefunden?', checkResult ? 'JA' : 'NEIN');
+            
+            // Über Broadcast an andere mitteilen
+            broadcastLobbyUpdate('lobby_created', currentLobby);
+            
+            showLobbyRoom();
+            
+            // Sharing-Links erstellen
+            const baseUrl = window.location.origin + window.location.pathname;
+            const joinLink = `${baseUrl}?lobby=${lobbyCode}`;
+            const hashLink = `${baseUrl}#${lobbyCode}`;
+            
+            // URL aktualisieren
+            window.history.replaceState({}, '', hashLink);
+            
+            // Sofort nach Erstellung: Kompletter Status-Check
+            setTimeout(() => {
+                console.log('📊 SOFORT-CHECK nach Lobby-Erstellung:');
+                console.log('  • currentLobby:', currentLobby);
+                console.log('  • Storage Keys:', Object.keys(localStorage));
+                
+                const globalKey = LOBBY_STORAGE_KEY;
+                const globalData = localStorage.getItem(globalKey);
+                console.log(`  • Global Storage (${globalKey}):`, globalData);
+                
+                const indexData = localStorage.getItem('nichtlachen_server_index');
+                console.log('  • Server Index:', indexData);
+                
+                const onlineKey = `online_lobby_${lobbyCode}`;
+                const onlineData = localStorage.getItem(onlineKey);
+                console.log(`  • Online Key (${onlineKey}):`, onlineData);
+                
+                const activeCount = listActiveLobbies();
+                console.log(`  • Aktive Lobbys gefunden: ${activeCount}`);
+                
+                if (activeCount === 0) {
+                    console.error('❌ KRITISCHER FEHLER: Lobby wurde erstellt aber nicht gefunden!');
+                    console.log('🔧 Versuche manuellen Storage-Test...');
+                    
+                    // Manueller Test
+                    const testData = { test: 'lobby', code: lobbyCode };
+                    localStorage.setItem('test_lobby_storage', JSON.stringify(testData));
+                    const testRetrieve = JSON.parse(localStorage.getItem('test_lobby_storage') || '{}');
+                    console.log('🧪 Manual Storage Test:', testRetrieve);
+                    localStorage.removeItem('test_lobby_storage');
+                }
+            }, 100);
+            
+            // Erweiterte Lobby-Info mit Sharing-Optionen
+            const lobbyInfo = `🎉 Lobby erfolgreich erstellt!\n\n` +
+                            `📋 Lobby-Code: ${lobbyCode}\n\n` +
+                            `🔗 Sharing-Links:\n` +
+                            `• ${joinLink}\n` +
+                            `• ${hashLink}\n\n` +
+                            `📤 Teile einen der Links mit deinen Freunden!\n` +
+                            `Sie können direkt über den Link beitreten.\n\n` +
+                            `💡 Die Lobby ist jetzt in mehreren Speichern verfügbar\n` +
+                            `für bessere Cross-Browser-Kompatibilität!\n\n` +
+                            `🔧 Debug: Aktuelle Lobbys werden in der Konsole angezeigt`;
+            
+            alert(lobbyInfo);
+            
+            // Link in die Zwischenablage kopieren (falls verfügbar)
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(joinLink).then(() => {
+                    console.log('🔗 Lobby-Link in Zwischenablage kopiert');
+                }).catch(err => {
+                    console.log('Zwischenablage nicht verfügbar:', err);
+                });
+            }
+            
+            // Polling für Updates starten
+            startLobbyPolling();
+            
+            // Nach 5 Sekunden Status-Update
+            setTimeout(() => {
+                console.log(`📊 Lobby ${lobbyCode} Status nach 5s:`, listActiveLobbies(), 'verfügbare Lobbys');
+            }, 5000);
+        }
+
+        // Sharing-Funktionen hinzufügen
+        function shareLobbyLink() {
+            if (!currentLobby) {
+                alert('❌ Keine aktive Lobby zum Teilen!');
+                return;
+            }
+            
+            const baseUrl = window.location.origin + window.location.pathname;
+            const joinLink = `${baseUrl}?lobby=${currentLobby.code}`;
+            
+            if (navigator.share) {
+                // Native Sharing API (Mobile)
+                navigator.share({
+                    title: 'Nicht Lachen Challenge - Lobby beitreten',
+                    text: `Tritt meiner Lobby bei! Code: ${currentLobby.code}`,
+                    url: joinLink
+                }).then(() => {
+                    console.log('🔗 Lobby erfolgreich geteilt');
+                }).catch(err => {
+                    console.log('Sharing failed:', err);
+                    copyLobbyLink(); // Fallback
+                });
+            } else {
+                copyLobbyLink(); // Fallback für Desktop
+            }
+        }
+
+        function copyLobbyLink() {
+            if (!currentLobby) {
+                alert('❌ Keine aktive Lobby zum Kopieren!');
+                return;
+            }
+            
+            const baseUrl = window.location.origin + window.location.pathname;
+            const joinLink = `${baseUrl}?lobby=${currentLobby.code}`;
+            
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(joinLink).then(() => {
+                    alert('🔗 Lobby-Link wurde in die Zwischenablage kopiert!\n\n' + joinLink);
+                }).catch(err => {
+                    // Fallback für ältere Browser
+                    prompt('📋 Kopiere diesen Link und teile ihn:', joinLink);
+                });
+            } else {
+                // Fallback für ältere Browser
+                prompt('📋 Kopiere diesen Link und teile ihn:', joinLink);
+            }
+        }
+        
+        // VEREINFACHTE UND ROBUSTE LOBBY-FUNKTIONEN (Debug-Version)
+        
+        // Direkte Test-Lobby erstellen für Debugging
+        function createTestLobby() {
+            console.log('🧪 Erstelle Test-Lobby für Debugging...');
+            
+            const testCode = 'DEBUG' + Math.random().toString(36).substring(2, 5).toUpperCase();
+            const testLobby = {
+                code: testCode,
+                host: 'DebugUser',
+                players: [{ name: 'DebugUser', isHost: true, id: Date.now(), joinedAt: Date.now() }],
+                created: Date.now(),
+                lastActivity: Date.now(),
+                gameState: 'waiting',
+                chat: [{ message: 'Debug-Lobby erstellt', sender: 'system', timestamp: Date.now() }]
+            };
+            
+            // Direkt in localStorage speichern
+            try {
+                // Methode 1: Globaler Storage
+                const globalLobbies = JSON.parse(localStorage.getItem(LOBBY_STORAGE_KEY) || '{}');
+                globalLobbies[testCode] = testLobby;
+                localStorage.setItem(LOBBY_STORAGE_KEY, JSON.stringify(globalLobbies));
+                
+                // Methode 2: Einzeln speichern
+                localStorage.setItem(`lobby_${testCode}`, JSON.stringify(testLobby));
+                
+                // Methode 3: Online-Storage
+                localStorage.setItem(`online_lobby_${testCode}`, JSON.stringify({
+                    lobby: testLobby,
+                    created: Date.now(),
+                    version: 'debug'
+                }));
+                
+                console.log(`✅ Test-Lobby ${testCode} in allen Speichern gespeichert`);
+                
+                // Sofort testen
+                setTimeout(() => {
+                    const found1 = loadLobbyFromStorage(testCode);
+                    const found2 = JSON.parse(localStorage.getItem(`lobby_${testCode}`) || 'null');
+                    const found3 = JSON.parse(localStorage.getItem(`online_lobby_${testCode}`) || 'null');
+                    
+                    console.log('🔍 Test-Lobby Suchergebnisse:');
+                    console.log('  • Global Storage:', found1 ? '✅' : '❌');
+                    console.log('  • Einzelspeicher:', found2 ? '✅' : '❌');
+                    console.log('  • Online Storage:', found3 ? '✅' : '❌');
+                    
+                    const totalCount = listActiveLobbies();
+                    console.log(`📊 Gefundene Lobbys insgesamt: ${totalCount}`);
+                    
+                    alert(`🧪 Test-Lobby erstellt: ${testCode}\n\nErgebnisse:\nGlobal: ${found1 ? '✅' : '❌'}\nEinzel: ${found2 ? '✅' : '❌'}\nOnline: ${found3 ? '✅' : '❌'}\n\nTotal gefunden: ${totalCount}`);
+                }, 500);
+                
+                return testCode;
+            } catch (e) {
+                console.error('❌ Test-Lobby Erstellung fehlgeschlagen:', e);
+                alert('❌ Fehler beim Erstellen der Test-Lobby: ' + e.message);
+                return null;
+            }
+        }
+        
+        // Lobby-Storage komplett zurücksetzen und neu initialisieren
+        function resetLobbyStorage() {
+            console.log('🔄 Setze kompletten Lobby-Storage zurück...');
+            
+            try {
+                // Alle Lobby-relevanten Keys löschen
+                const keysToRemove = [];
+                for (let i = 0; i < localStorage.length; i++) {
+                    const key = localStorage.key(i);
+                    if (key && (
+                        key.startsWith('lobby_') || 
+                        key.startsWith('online_lobby_') || 
+                        key === LOBBY_STORAGE_KEY || 
+                        key === 'nichtlachen_server_index'
+                    )) {
+                        keysToRemove.push(key);
+                    }
+                }
+                
+                keysToRemove.forEach(key => {
+                    localStorage.removeItem(key);
+                    console.log(`🗑️ Entfernt: ${key}`);
+                });
+                
+                // Leeren globalen Storage erstellen
+                localStorage.setItem(LOBBY_STORAGE_KEY, '{}');
+                localStorage.setItem('nichtlachen_server_index', '{}');
+                
+                console.log('✅ Lobby-Storage zurückgesetzt');
+                
+                // Neu initialisieren
+                setTimeout(() => {
+                    const count = initializeLobbySystem();
+                    alert(`🔄 Storage zurückgesetzt!\n\nNeuer Status: ${count} aktive Lobbys`);
+                }, 500);
+                
+            } catch (e) {
+                console.error('❌ Storage-Reset fehlgeschlagen:', e);
+                alert('❌ Fehler beim Storage-Reset: ' + e.message);
+            }
+        }
+        
+        // Erweiterte Debug-Funktion mit mehr Details
+        function showLobbyDebugInfo() {
+            try {
+                console.log('🔧 ERWEITERTE LOBBY-DIAGNOSE...');
+                
+                let debugInfo = `🔧 LOBBY-SYSTEM DIAGNOSE 🔧\n\n`;
+                
+                // 1. localStorage Basis-Test
+                try {
+                    const testKey = 'debug_test';
+                    localStorage.setItem(testKey, 'test');
+                    const testResult = localStorage.getItem(testKey);
+                    localStorage.removeItem(testKey);
+                    debugInfo += `✅ localStorage verfügbar: ${testResult === 'test' ? 'JA' : 'NEIN'}\n`;
+                } catch (e) {
+                    debugInfo += `❌ localStorage FEHLER: ${e.message}\n`;
+                }
+                
+                // 2. Storage-Schlüssel auflisten
+                debugInfo += `\n📂 STORAGE-SCHLÜSSEL:\n`;
+                const allKeys = [];
+                for (let i = 0; i < localStorage.length; i++) {
+                    const key = localStorage.key(i);
+                    if (key && (key.includes('lobby') || key.includes('nichtlachen'))) {
+                        allKeys.push(key);
+                    }
+                }
+                
+                if (allKeys.length === 0) {
+                    debugInfo += `• KEINE lobby-relevanten Keys gefunden!\n`;
+                } else {
+                    allKeys.forEach(key => {
+                        const value = localStorage.getItem(key);
+                        const size = value ? value.length : 0;
+                        debugInfo += `• ${key}: ${size} Zeichen\n`;
+                    });
+                }
+                
+                // 3. Globale Lobbys prüfen
+                debugInfo += `\n🏠 GLOBALE LOBBYS:\n`;
+                try {
+                    const globalLobbies = JSON.parse(localStorage.getItem(LOBBY_STORAGE_KEY) || '{}');
+                    const lobbyCount = Object.keys(globalLobbies).length;
+                    debugInfo += `• Anzahl: ${lobbyCount}\n`;
+                    
+                    if (lobbyCount > 0) {
+                        Object.entries(globalLobbies).forEach(([code, lobby]) => {
+                            const age = Math.floor((Date.now() - lobby.lastActivity) / (1000 * 60));
+                            debugInfo += `  → ${code}: ${lobby.players?.length || 0} Spieler, ${age}min alt\n`;
+                        });
+                    } else {
+                        debugInfo += `• ⚠️ KEINE globalen Lobbys gefunden!\n`;
+                    }
+                } catch (e) {
+                    debugInfo += `• ❌ Fehler beim Laden: ${e.message}\n`;
+                }
+                
+                // 4. BroadcastChannel Status
+                debugInfo += `\n📡 CROSS-BROWSER-SYNC:\n`;
+                debugInfo += `• BroadcastChannel: ${lobbyBroadcast ? 'Aktiv' : 'Nicht verfügbar'}\n`;
+                
+                // 5. Aktuelle Session
+                debugInfo += `\n🔗 AKTUELLE SESSION:\n`;
+                debugInfo += `• Player: ${playerName || 'Nicht gesetzt'}\n`;
+                debugInfo += `• In Lobby: ${currentLobby ? currentLobby.code : 'Nein'}\n`;
+                debugInfo += `• Ist Host: ${isHost ? 'Ja' : 'Nein'}\n`;
+                debugInfo += `• URL: ${window.location.href}\n`;
+                
+                // 6. Automatische Tests
+                debugInfo += `\n🧪 SCHNELL-TESTS:\n`;
+                debugInfo += `• Test-Lobby erstellen: [Test Lobby] Button\n`;
+                debugInfo += `• Storage zurücksetzen: [Reset Storage] Button\n`;
+                debugInfo += `• Konsole öffnen: F12 für Details\n`;
+                
+                // 7. Lösungsvorschläge
+                debugInfo += `\n💡 LÖSUNGSVORSCHLÄGE:\n`;
+                if (allKeys.length === 0) {
+                    debugInfo += `• localStorage könnte deaktiviert sein\n`;
+                    debugInfo += `• Browser im Inkognito-Modus?\n`;
+                    debugInfo += `• Speicher-Limit erreicht?\n`;
+                } else {
+                    debugInfo += `• Versuche [Reset Storage]\n`;
+                    debugInfo += `• Erstelle eine [Test Lobby]\n`;
+                    debugInfo += `• Lade Seite neu (F5)\n`;
+                }
+                
+                alert(debugInfo);
+                
+                // Zusätzliche Buttons für Debug-Aktionen
+                const extraActions = confirm('🔧 Debug-Aktionen durchführen?\n\nJA = Test-Lobby erstellen\nNEIN = Storage zurücksetzen\nAbbrechen = Nichts tun');
+                
+                if (extraActions === true) {
+                    createTestLobby();
+                } else if (extraActions === false) {
+                    if (confirm('⚠️ Wirklich den kompletten Lobby-Storage zurücksetzen?\n\nDies löscht alle Lobbys unwiderruflich!')) {
+                        resetLobbyStorage();
+                    }
+                }
+                
+            } catch (e) {
+                alert('❌ Fehler bei Debug-Diagnose: ' + e.message);
+                console.error('Debug-Fehler:', e);
+            }
+        }
+
+        // Test-Funktion für localStorage debugging
+        function testLocalStorageFunction() {
+            console.log('🧪 STORAGE-DIAGNOSE GESTARTET...');
+            
+            // 1. Basis localStorage Test
+            try {
+                const testKey = 'debug_test_key';
+                const testData = { test: true, timestamp: Date.now() };
+                
+                localStorage.setItem(testKey, JSON.stringify(testData));
+                const retrieved = localStorage.getItem(testKey);
+                const parsed = JSON.parse(retrieved);
+                
+                console.log('✅ Basis localStorage Test erfolgreich:', parsed);
+                localStorage.removeItem(testKey);
+            } catch (e) {
+                console.error('❌ Basis localStorage Test fehlgeschlagen:', e);
+                return false;
+            }
+            
+            // 2. Lobby Storage Key Test
+            const storageKey = LOBBY_STORAGE_KEY;
+            console.log(`🔍 Prüfe Storage Key: ${storageKey}`);
+            
+            const currentData = localStorage.getItem(storageKey);
+            console.log('📂 Aktuelle Daten im globalen Storage:', currentData);
+            
+            try {
+                const parsed = JSON.parse(currentData || '{}');
+                console.log('📊 Geparste Lobbys:', Object.keys(parsed));
+                
+                if (Object.keys(parsed).length === 0) {
+                    console.log('🔧 Erstelle Test-Lobby im Storage...');
+                    
+                    const testLobby = {
+                        code: 'TEST123',
+                        host: 'TestUser',
+                        players: [{ name: 'TestUser', isHost: true }],
+                        created: Date.now(),
+                        lastActivity: Date.now(),
+                        gameState: 'waiting',
+                        chat: []
+                    };
+                    
+                    parsed['TEST123'] = testLobby;
+                    localStorage.setItem(storageKey, JSON.stringify(parsed));
+                    
+                    // Sofort prüfen
+                    const verify = localStorage.getItem(storageKey);
+                    const verifyParsed = JSON.parse(verify);
+                    
+                    if (verifyParsed['TEST123']) {
+                        console.log('✅ Test-Lobby erfolgreich gespeichert und verifiziert');
+                        
+                        // Test-Lobby wieder entfernen
+                        delete verifyParsed['TEST123'];
+                        localStorage.setItem(storageKey, JSON.stringify(verifyParsed));
+                        console.log('🧹 Test-Lobby bereinigt');
+                        
+                        return true;
+                    } else {
+                        console.error('❌ Test-Lobby wurde nicht korrekt gespeichert');
+                        return false;
+                    }
+                }
+                
+                return true;
+            } catch (e) {
+                console.error('❌ Fehler beim Parsen der Storage-Daten:', e);
+                return false;
+            }
+        }
+
+        // Initialisierung beim Laden der Seite
+        document.addEventListener('DOMContentLoaded', function() {
+            loadVideoHistory();
+            createParticles();
+            enhanceVideoControls();
+            
+            // STORAGE-DIAGNOSE AUSFÜHREN
+            console.log('🧪 Führe Storage-Diagnose aus...');
+            const storageOk = testLocalStorageFunction();
+            console.log(`🏥 Storage-Diagnose Ergebnis: ${storageOk ? 'GESUND' : 'PROBLEM ERKANNT'}`);
+            
+            // Lobby-System initialisieren
+            initializeLobbySystem();
+            
+            // URL-Parameter prüfen für automatisches Lobby-Beitreten
+            checkUrlParameters();
+            
+            // Video-Zeit regelmäßig aktualisieren
+            setInterval(updateVideoTime, 1000);
+            
+            console.log('🎭 Nicht Lachen Challenge initialisiert!');
+        });
+    </script>
+</body>
+</html>
