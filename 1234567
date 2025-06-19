@@ -1,0 +1,4662 @@
+name: '       &8Architekt Bezahlungen'
+size: 45
+updateInterval: 10
+items:
+  'Hintergrund':
+    isPermanent: true
+    item:
+      material: GRAY_STAINED_GLASS_PANE
+      name: ' '
+    slots:
+    - 0-9
+    - 17-18
+    - 26-27
+    - 35-38
+    - 42-44
+    
+# ---------------------------------------------------------------------------------PAGE 1-----------------------------------------------------------------------    
+  'page 1 slot 10':
+    slot: 10
+    page: 1
+    item:
+      material: OAK_LOG
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 1 slot 11':
+    slot: 11
+    page: 1
+    item:
+      material: OAK_WOOD
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 1 slot 12':
+    slot: 12
+    page: 1
+    item:
+      material: STRIPPED_OAK_LOG
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 1 slot 13':
+    slot: 13
+    page: 1
+    item:
+      material: STRIPPED_OAK_WOOD
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 1 slot 14':
+    slot: 14
+    page: 1
+    item:
+      material: OAK_PLANKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 1 slot 15':
+    slot: 15
+    page: 1
+    item:
+      material: OAK_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 1 slot 16':
+    slot: 16
+    page: 1
+    item:
+      material: OAK_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 1 slot 19':
+    slot: 19
+    page: 1
+    item:
+      material: OAK_FENCE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 1 slot 20':
+    slot: 20
+    page: 1
+    item:
+      material: OAK_FENCE_GATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 1 slot 21':
+    slot: 21
+    page: 1
+    item:
+      material: OAK_DOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 1 slot 22':
+    slot: 22
+    page: 1
+    item:
+      material: OAK_TRAPDOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 1 slot 23':
+    slot: 23
+    page: 1
+    item:
+      material: OAK_PRESSURE_PLATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 1 slot 24':
+    slot: 24
+    page: 1
+    item:
+      material: OAK_BUTTON
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 1 slot 25':
+    slot: 25
+    page: 1
+    item:
+      material: SPRUCE_LOG
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 1 slot 28':
+    slot: 28
+    page: 1
+    item:
+      material: SPRUCE_WOOD
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 1 slot 29':
+    slot: 29
+    page: 1
+    item:
+      material: STRIPPED_SPRUCE_LOG
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 1 slot 30':
+    slot: 30
+    page: 1
+    item:
+      material: STRIPPED_SPRUCE_WOOD
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 1 slot 31':
+    slot: 31
+    page: 1
+    item:
+      material: SPRUCE_PLANKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 1 slot 32':
+    slot: 32
+    page: 1
+    item:
+      material: SPRUCE_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 1 slot 33':
+    slot: 33
+    page: 1
+    item:
+      material: SPRUCE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 1 slot 34':
+    slot: 34
+    page: 1
+    item:
+      material: SPRUCE_FENCE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 2 slot 10':
+    slot: 10
+    page: 2
+    item:
+      material: SPRUCE_FENCE_GATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 2 slot 11':
+    slot: 11
+    page: 2
+    item:
+      material: SPRUCE_DOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 2 slot 12':
+    slot: 12
+    page: 2
+    item:
+      material: SPRUCE_TRAPDOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 2 slot 13':
+    slot: 13
+    page: 2
+    item:
+      material: SPRUCE_PRESSURE_PLATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 2 slot 14':
+    slot: 14
+    page: 2
+    item:
+      material: SPRUCE_BUTTON
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 2 slot 15':
+    slot: 15
+    page: 2
+    item:
+      material: BIRCH_LOG
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 2 slot 16':
+    slot: 16
+    page: 2
+    item:
+      material: BIRCH_WOOD
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 2 slot 19':
+    slot: 19
+    page: 2
+    item:
+      material: STRIPPED_BIRCH_LOG
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 2 slot 20':
+    slot: 20
+    page: 2
+    item:
+      material: STRIPPED_BIRCH_WOOD
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 2 slot 21':
+    slot: 21
+    page: 2
+    item:
+      material: BIRCH_PLANKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 2 slot 22':
+    slot: 22
+    page: 2
+    item:
+      material: BIRCH_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 2 slot 23':
+    slot: 23
+    page: 2
+    item:
+      material: BIRCH_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 2 slot 24':
+    slot: 24
+    page: 2
+    item:
+      material: BIRCH_FENCE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 2 slot 25':
+    slot: 25
+    page: 2
+    item:
+      material: BIRCH_FENCE_GATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 2 slot 28':
+    slot: 28
+    page: 2
+    item:
+      material: BIRCH_DOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 2 slot 29':
+    slot: 29
+    page: 2
+    item:
+      material: BIRCH_TRAPDOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 2 slot 30':
+    slot: 30
+    page: 2
+    item:
+      material: BIRCH_PRESSURE_PLATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 2 slot 31':
+    slot: 31
+    page: 2
+    item:
+      material: BIRCH_BUTTON
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 2 slot 32':
+    slot: 32
+    page: 2
+    item:
+      material: JUNGLE_LOG
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 2 slot 33':
+    slot: 33
+    page: 2
+    item:
+      material: JUNGLE_WOOD
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 2 slot 34':
+    slot: 34
+    page: 2
+    item:
+      material: STRIPPED_JUNGLE_LOG
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 3 slot 10':
+    slot: 10
+    page: 3
+    item:
+      material: STRIPPED_JUNGLE_WOOD
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 3 slot 11':
+    slot: 11
+    page: 3
+    item:
+      material: JUNGLE_PLANKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 3 slot 12':
+    slot: 12
+    page: 3
+    item:
+      material: JUNGLE_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 3 slot 13':
+    slot: 13
+    page: 3
+    item:
+      material: JUNGLE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 3 slot 14':
+    slot: 14
+    page: 3
+    item:
+      material: JUNGLE_FENCE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 3 slot 15':
+    slot: 15
+    page: 3
+    item:
+      material: JUNGLE_FENCE_GATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 3 slot 16':
+    slot: 16
+    page: 3
+    item:
+      material: JUNGLE_DOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 3 slot 19':
+    slot: 19
+    page: 3
+    item:
+      material: JUNGLE_TRAPDOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 3 slot 20':
+    slot: 20
+    page: 3
+    item:
+      material: JUNGLE_PRESSURE_PLATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 3 slot 21':
+    slot: 21
+    page: 3
+    item:
+      material: JUNGLE_BUTTON
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 3 slot 22':
+    slot: 22
+    page: 3
+    item:
+      material: ACACIA_LOG
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 3 slot 23':
+    slot: 23
+    page: 3
+    item:
+      material: ACACIA_WOOD
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 3 slot 24':
+    slot: 24
+    page: 3
+    item:
+      material: STRIPPED_ACACIA_LOG
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 3 slot 25':
+    slot: 25
+    page: 3
+    item:
+      material: STRIPPED_ACACIA_WOOD
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 3 slot 28':
+    slot: 28
+    page: 3
+    item:
+      material: ACACIA_PLANKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 3 slot 29':
+    slot: 29
+    page: 3
+    item:
+      material: ACACIA_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 3 slot 30':
+    slot: 30
+    page: 3
+    item:
+      material: ACACIA_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 3 slot 31':
+    slot: 31
+    page: 3
+    item:
+      material: ACACIA_FENCE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 3 slot 32':
+    slot: 32
+    page: 3
+    item:
+      material: ACACIA_FENCE_GATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 3 slot 33':
+    slot: 33
+    page: 3
+    item:
+      material: ACACIA_DOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 3 slot 34':
+    slot: 34
+    page: 3
+    item:
+      material: ACACIA_TRAPDOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 4 slot 10':
+    slot: 10
+    page: 4
+    item:
+      material: ACACIA_PRESSURE_PLATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 4 slot 11':
+    slot: 11
+    page: 4
+    item:
+      material: ACACIA_BUTTON
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 4 slot 12':
+    slot: 12
+    page: 4
+    item:
+      material: DARK_OAK_LOG
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 4 slot 13':
+    slot: 13
+    page: 4
+    item:
+      material: DARK_OAK_WOOD
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 4 slot 14':
+    slot: 14
+    page: 4
+    item:
+      material: STRIPPED_DARK_OAK_LOG
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 4 slot 15':
+    slot: 15
+    page: 4
+    item:
+      material: STRIPPED_DARK_OAK_WOOD
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 4 slot 16':
+    slot: 16
+    page: 4
+    item:
+      material: DARK_OAK_PLANKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 4 slot 19':
+    slot: 19
+    page: 4
+    item:
+      material: DARK_OAK_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 4 slot 20':
+    slot: 20
+    page: 4
+    item:
+      material: DARK_OAK_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 4 slot 21':
+    slot: 21
+    page: 4
+    item:
+      material: DARK_OAK_FENCE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 4 slot 22':
+    slot: 22
+    page: 4
+    item:
+      material: DARK_OAK_FENCE_GATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 4 slot 23':
+    slot: 23
+    page: 4
+    item:
+      material: DARK_OAK_DOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 4 slot 24':
+    slot: 24
+    page: 4
+    item:
+      material: DARK_OAK_TRAPDOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 4 slot 25':
+    slot: 25
+    page: 4
+    item:
+      material: DARK_OAK_PRESSURE_PLATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 4 slot 28':
+    slot: 28
+    page: 4
+    item:
+      material: DARK_OAK_BUTTON
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 4 slot 29':
+    slot: 29
+    page: 4
+    item:
+      material: MANGROVE_LOG
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 4 slot 30':
+    slot: 30
+    page: 4
+    item:
+      material: MANGROVE_WOOD
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 4 slot 31':
+    slot: 31
+    page: 4
+    item:
+      material: STRIPPED_MANGROVE_LOG
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 4 slot 32':
+    slot: 32
+    page: 4
+    item:
+      material: STRIPPED_MANGROVE_WOOD
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 4 slot 33':
+    slot: 33
+    page: 4
+    item:
+      material: MANGROVE_PLANKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 4 slot 34':
+    slot: 34
+    page: 4
+    item:
+      material: MANGROVE_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 5 slot 10':
+    slot: 10
+    page: 5
+    item:
+      material: MANGROVE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 5 slot 11':
+    slot: 11
+    page: 5
+    item:
+      material: MANGROVE_FENCE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 5 slot 12':
+    slot: 12
+    page: 5
+    item:
+      material: MANGROVE_FENCE_GATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 5 slot 13':
+    slot: 13
+    page: 5
+    item:
+      material: MANGROVE_DOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 5 slot 14':
+    slot: 14
+    page: 5
+    item:
+      material: MANGROVE_TRAPDOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 5 slot 15':
+    slot: 15
+    page: 5
+    item:
+      material: MANGROVE_PRESSURE_PLATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 5 slot 16':
+    slot: 16
+    page: 5
+    item:
+      material: MANGROVE_BUTTON
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 5 slot 19':
+    slot: 19
+    page: 5
+    item:
+      material: CHERRY_LOG
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 5 slot 20':
+    slot: 20
+    page: 5
+    item:
+      material: CHERRY_WOOD
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 5 slot 21':
+    slot: 21
+    page: 5
+    item:
+      material: STRIPPED_CHERRY_LOG
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 5 slot 22':
+    slot: 22
+    page: 5
+    item:
+      material: STRIPPED_CHERRY_WOOD
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 5 slot 23':
+    slot: 23
+    page: 5
+    item:
+      material: CHERRY_PLANKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 5 slot 24':
+    slot: 24
+    page: 5
+    item:
+      material: CHERRY_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 5 slot 25':
+    slot: 25
+    page: 5
+    item:
+      material: CHERRY_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 5 slot 28':
+    slot: 28
+    page: 5
+    item:
+      material: CHERRY_FENCE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 5 slot 29':
+    slot: 29
+    page: 5
+    item:
+      material: CHERRY_FENCE_GATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 5 slot 30':
+    slot: 30
+    page: 5
+    item:
+      material: CHERRY_DOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 5 slot 31':
+    slot: 31
+    page: 5
+    item:
+      material: CHERRY_TRAPDOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 5 slot 32':
+    slot: 32
+    page: 5
+    item:
+      material: CHERRY_PRESSURE_PLATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 5 slot 33':
+    slot: 33
+    page: 5
+    item:
+      material: CHERRY_BUTTON
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 5 slot 34':
+    slot: 34
+    page: 5
+    item:
+      material: PALE_OAK_LOG
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 6 slot 10':
+    slot: 10
+    page: 6
+    item:
+      material: PALE_OAK_WOOD
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 6 slot 11':
+    slot: 11
+    page: 6
+    item:
+      material: STRIPPED_PALE_OAK_LOG
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 6 slot 12':
+    slot: 12
+    page: 6
+    item:
+      material: STRIPPED_PALE_OAK_WOOD
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 6 slot 13':
+    slot: 13
+    page: 6
+    item:
+      material: PALE_OAK_PLANKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 6 slot 14':
+    slot: 14
+    page: 6
+    item:
+      material: PALE_OAK_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 6 slot 15':
+    slot: 15
+    page: 6
+    item:
+      material: PALE_OAK_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 6 slot 16':
+    slot: 16
+    page: 6
+    item:
+      material: PALE_OAK_FENCE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 6 slot 19':
+    slot: 19
+    page: 6
+    item:
+      material: PALE_OAK_FENCE_GATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 6 slot 20':
+    slot: 20
+    page: 6
+    item:
+      material: PALE_OAK_DOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 6 slot 21':
+    slot: 21
+    page: 6
+    item:
+      material: PALE_OAK_TRAPDOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 6 slot 22':
+    slot: 22
+    page: 6
+    item:
+      material: PALE_OAK_PRESSURE_PLATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 6 slot 23':
+    slot: 23
+    page: 6
+    item:
+      material: PALE_OAK_BUTTON
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 6 slot 24':
+    slot: 24
+    page: 6
+    item:
+      material: BAMBOO_BLOCK
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 6 slot 25':
+    slot: 25
+    page: 6
+    item:
+      material: STRIPPED_BAMBOO_BLOCK
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 6 slot 28':
+    slot: 28
+    page: 6
+    item:
+      material: BAMBOO_PLANKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 6 slot 29':
+    slot: 29
+    page: 6
+    item:
+      material: BAMBOO_MOSAIC
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 6 slot 30':
+    slot: 30
+    page: 6
+    item:
+      material: BAMBOO_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 6 slot 31':
+    slot: 31
+    page: 6
+    item:
+      material: BAMBOO_MOSAIC_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 6 slot 32':
+    slot: 32
+    page: 6
+    item:
+      material: BAMBOO_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 6 slot 33':
+    slot: 33
+    page: 6
+    item:
+      material: BAMBOO_MOSAIC_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 6 slot 34':
+    slot: 34
+    page: 6
+    item:
+      material: BAMBOO_FENCE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 7 slot 10':
+    slot: 10
+    page: 7
+    item:
+      material: BAMBOO_FENCE_GATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 7 slot 11':
+    slot: 11
+    page: 7
+    item:
+      material: BAMBOO_DOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 7 slot 12':
+    slot: 12
+    page: 7
+    item:
+      material: BAMBOO_TRAPDOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 7 slot 13':
+    slot: 13
+    page: 7
+    item:
+      material: BAMBOO_PRESSURE_PLATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 7 slot 14':
+    slot: 14
+    page: 7
+    item:
+      material: BAMBOO_BUTTON
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 7 slot 15':
+    slot: 15
+    page: 7
+    item:
+      material: CRIMSON_STEM
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 7 slot 16':
+    slot: 16
+    page: 7
+    item:
+      material: CRIMSON_HYPHAE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 7 slot 19':
+    slot: 19
+    page: 7
+    item:
+      material: STRIPPED_CRIMSON_STEM
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 7 slot 20':
+    slot: 20
+    page: 7
+    item:
+      material: STRIPPED_CRIMSON_HYPHAE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 7 slot 21':
+    slot: 21
+    page: 7
+    item:
+      material: CRIMSON_PLANKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 7 slot 22':
+    slot: 22
+    page: 7
+    item:
+      material: CRIMSON_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 7 slot 23':
+    slot: 23
+    page: 7
+    item:
+      material: CRIMSON_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 7 slot 24':
+    slot: 24
+    page: 7
+    item:
+      material: CRIMSON_FENCE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 7 slot 25':
+    slot: 25
+    page: 7
+    item:
+      material: CRIMSON_FENCE_GATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 7 slot 28':
+    slot: 28
+    page: 7
+    item:
+      material: CRIMSON_DOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 7 slot 29':
+    slot: 29
+    page: 7
+    item:
+      material: CRIMSON_TRAPDOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 7 slot 30':
+    slot: 30
+    page: 7
+    item:
+      material: CRIMSON_PRESSURE_PLATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 7 slot 31':
+    slot: 31
+    page: 7
+    item:
+      material: CRIMSON_BUTTON
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 7 slot 32':
+    slot: 32
+    page: 7
+    item:
+      material: WARPED_STEM
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 7 slot 33':
+    slot: 33
+    page: 7
+    item:
+      material: WARPED_HYPHAE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 7 slot 34':
+    slot: 34
+    page: 7
+    item:
+      material: STRIPPED_WARPED_STEM
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 8 slot 10':
+    slot: 10
+    page: 8
+    item:
+      material: STRIPPED_WARPED_HYPHAE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 8 slot 11':
+    slot: 11
+    page: 8
+    item:
+      material: WARPED_PLANKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 8 slot 12':
+    slot: 12
+    page: 8
+    item:
+      material: WARPED_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 8 slot 13':
+    slot: 13
+    page: 8
+    item:
+      material: WARPED_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 8 slot 14':
+    slot: 14
+    page: 8
+    item:
+      material: WARPED_FENCE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 8 slot 15':
+    slot: 15
+    page: 8
+    item:
+      material: WARPED_FENCE_GATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 8 slot 16':
+    slot: 16
+    page: 8
+    item:
+      material: WARPED_DOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 8 slot 19':
+    slot: 19
+    page: 8
+    item:
+      material: WARPED_TRAPDOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 8 slot 20':
+    slot: 20
+    page: 8
+    item:
+      material: WARPED_PRESSURE_PLATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 8 slot 21':
+    slot: 21
+    page: 8
+    item:
+      material: WARPED_BUTTON
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 8 slot 22':
+    slot: 22
+    page: 8
+    item:
+      material: STONE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 8 slot 23':
+    slot: 23
+    page: 8
+    item:
+      material: STONE_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 8 slot 24':
+    slot: 24
+    page: 8
+    item:
+      material: STONE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 8 slot 25':
+    slot: 25
+    page: 8
+    item:
+      material: STONE_PRESSURE_PLATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 8 slot 28':
+    slot: 28
+    page: 8
+    item:
+      material: STONE_BUTTON
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 8 slot 29':
+    slot: 29
+    page: 8
+    item:
+      material: COBBLESTONE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 8 slot 30':
+    slot: 30
+    page: 8
+    item:
+      material: COBBLESTONE_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 8 slot 31':
+    slot: 31
+    page: 8
+    item:
+      material: COBBLESTONE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 8 slot 32':
+    slot: 32
+    page: 8
+    item:
+      material: COBBLESTONE_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 8 slot 33':
+    slot: 33
+    page: 8
+    item:
+      material: MOSSY_COBBLESTONE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 8 slot 34':
+    slot: 34
+    page: 8
+    item:
+      material: MOSSY_COBBLESTONE_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 9 slot 10':
+    slot: 10
+    page: 9
+    item:
+      material: MOSSY_COBBLESTONE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 9 slot 11':
+    slot: 11
+    page: 9
+    item:
+      material: MOSSY_COBBLESTONE_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 9 slot 12':
+    slot: 12
+    page: 9
+    item:
+      material: SMOOTH_STONE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 9 slot 13':
+    slot: 13
+    page: 9
+    item:
+      material: SMOOTH_STONE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 9 slot 14':
+    slot: 14
+    page: 9
+    item:
+      material: STONE_BRICKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 9 slot 15':
+    slot: 15
+    page: 9
+    item:
+      material: CRACKED_STONE_BRICKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 9 slot 16':
+    slot: 16
+    page: 9
+    item:
+      material: STONE_BRICK_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 9 slot 19':
+    slot: 19
+    page: 9
+    item:
+      material: STONE_BRICK_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 9 slot 20':
+    slot: 20
+    page: 9
+    item:
+      material: STONE_BRICK_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 9 slot 21':
+    slot: 21
+    page: 9
+    item:
+      material: CHISELED_STONE_BRICKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 9 slot 22':
+    slot: 22
+    page: 9
+    item:
+      material: MOSSY_STONE_BRICKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 9 slot 23':
+    slot: 23
+    page: 9
+    item:
+      material: MOSSY_STONE_BRICK_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 9 slot 24':
+    slot: 24
+    page: 9
+    item:
+      material: MOSSY_STONE_BRICK_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 9 slot 25':
+    slot: 25
+    page: 9
+    item:
+      material: MOSSY_STONE_BRICK_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 9 slot 28':
+    slot: 28
+    page: 9
+    item:
+      material: GRANITE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 9 slot 29':
+    slot: 29
+    page: 9
+    item:
+      material: GRANITE_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 9 slot 30':
+    slot: 30
+    page: 9
+    item:
+      material: GRANITE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 9 slot 31':
+    slot: 31
+    page: 9
+    item:
+      material: GRANITE_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 9 slot 32':
+    slot: 32
+    page: 9
+    item:
+      material: POLISHED_GRANITE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 9 slot 33':
+    slot: 33
+    page: 9
+    item:
+      material: POLISHED_GRANITE_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 9 slot 34':
+    slot: 34
+    page: 9
+    item:
+      material: POLISHED_GRANITE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 10 slot 10':
+    slot: 10
+    page: 10
+    item:
+      material: DIORITE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 10 slot 11':
+    slot: 11
+    page: 10
+    item:
+      material: DIORITE_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 10 slot 12':
+    slot: 12
+    page: 10
+    item:
+      material: DIORITE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 10 slot 13':
+    slot: 13
+    page: 10
+    item:
+      material: DIORITE_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 10 slot 14':
+    slot: 14
+    page: 10
+    item:
+      material: POLISHED_DIORITE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 10 slot 15':
+    slot: 15
+    page: 10
+    item:
+      material: POLISHED_DIORITE_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 10 slot 16':
+    slot: 16
+    page: 10
+    item:
+      material: POLISHED_DIORITE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 10 slot 19':
+    slot: 19
+    page: 10
+    item:
+      material: ANDESITE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 10 slot 20':
+    slot: 20
+    page: 10
+    item:
+      material: ANDESITE_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 10 slot 21':
+    slot: 21
+    page: 10
+    item:
+      material: ANDESITE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 10 slot 22':
+    slot: 22
+    page: 10
+    item:
+      material: ANDESITE_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 10 slot 23':
+    slot: 23
+    page: 10
+    item:
+      material: POLISHED_ANDESITE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 10 slot 24':
+    slot: 24
+    page: 10
+    item:
+      material: POLISHED_ANDESITE_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 10 slot 25':
+    slot: 25
+    page: 10
+    item:
+      material: POLISHED_ANDESITE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 10 slot 28':
+    slot: 28
+    page: 10
+    item:
+      material: DEEPSLATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 10 slot 29':
+    slot: 29
+    page: 10
+    item:
+      material: COBBLED_DEEPSLATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 10 slot 30':
+    slot: 30
+    page: 10
+    item:
+      material: COBBLED_DEEPSLATE_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 10 slot 31':
+    slot: 31
+    page: 10
+    item:
+      material: COBBLED_DEEPSLATE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 10 slot 32':
+    slot: 32
+    page: 10
+    item:
+      material: COBBLED_DEEPSLATE_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 10 slot 33':
+    slot: 33
+    page: 10
+    item:
+      material: CHISELED_DEEPSLATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 10 slot 34':
+    slot: 34
+    page: 10
+    item:
+      material: POLISHED_DEEPSLATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 11 slot 10':
+    slot: 10
+    page: 11
+    item:
+      material: POLISHED_DEEPSLATE_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 11 slot 11':
+    slot: 11
+    page: 11
+    item:
+      material: POLISHED_DEEPSLATE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 11 slot 12':
+    slot: 12
+    page: 11
+    item:
+      material: POLISHED_DEEPSLATE_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 11 slot 13':
+    slot: 13
+    page: 11
+    item:
+      material: DEEPSLATE_BRICKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 11 slot 14':
+    slot: 14
+    page: 11
+    item:
+      material: CRACKED_DEEPSLATE_BRICKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 11 slot 15':
+    slot: 15
+    page: 11
+    item:
+      material: DEEPSLATE_BRICK_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 11 slot 16':
+    slot: 16
+    page: 11
+    item:
+      material: DEEPSLATE_BRICK_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 11 slot 19':
+    slot: 19
+    page: 11
+    item:
+      material: DEEPSLATE_BRICK_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 11 slot 20':
+    slot: 20
+    page: 11
+    item:
+      material: DEEPSLATE_TILES
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 11 slot 21':
+    slot: 21
+    page: 11
+    item:
+      material: CRACKED_DEEPSLATE_TILES
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 11 slot 22':
+    slot: 22
+    page: 11
+    item:
+      material: DEEPSLATE_TILE_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 11 slot 23':
+    slot: 23
+    page: 11
+    item:
+      material: DEEPSLATE_TILE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 11 slot 24':
+    slot: 24
+    page: 11
+    item:
+      material: DEEPSLATE_TILE_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 11 slot 25':
+    slot: 25
+    page: 11
+    item:
+      material: REINFORCED_DEEPSLATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 11 slot 28':
+    slot: 28
+    page: 11
+    item:
+      material: TUFF
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 11 slot 29':
+    slot: 29
+    page: 11
+    item:
+      material: TUFF_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 11 slot 30':
+    slot: 30
+    page: 11
+    item:
+      material: TUFF_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 11 slot 31':
+    slot: 31
+    page: 11
+    item:
+      material: TUFF_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 11 slot 32':
+    slot: 32
+    page: 11
+    item:
+      material: CHISELED_TUFF
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 11 slot 33':
+    slot: 33
+    page: 11
+    item:
+      material: POLISHED_TUFF
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 11 slot 34':
+    slot: 34
+    page: 11
+    item:
+      material: POLISHED_TUFF_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 12 slot 10':
+    slot: 10
+    page: 12
+    item:
+      material: POLISHED_TUFF_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 12 slot 11':
+    slot: 11
+    page: 12
+    item:
+      material: POLISHED_TUFF_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 12 slot 12':
+    slot: 12
+    page: 12
+    item:
+      material: TUFF_BRICKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 12 slot 13':
+    slot: 13
+    page: 12
+    item:
+      material: TUFF_BRICK_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 12 slot 14':
+    slot: 14
+    page: 12
+    item:
+      material: TUFF_BRICK_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 12 slot 15':
+    slot: 15
+    page: 12
+    item:
+      material: TUFF_BRICK_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 12 slot 16':
+    slot: 16
+    page: 12
+    item:
+      material: CHISELED_TUFF_BRICKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 12 slot 19':
+    slot: 19
+    page: 12
+    item:
+      material: BRICKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 12 slot 20':
+    slot: 20
+    page: 12
+    item:
+      material: BRICK_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 12 slot 21':
+    slot: 21
+    page: 12
+    item:
+      material: BRICK_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 12 slot 22':
+    slot: 22
+    page: 12
+    item:
+      material: BRICK_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 12 slot 23':
+    slot: 23
+    page: 12
+    item:
+      material: PACKED_MUD
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 12 slot 24':
+    slot: 24
+    page: 12
+    item:
+      material: MUD_BRICKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 12 slot 25':
+    slot: 25
+    page: 12
+    item:
+      material: MUD_BRICK_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 12 slot 28':
+    slot: 28
+    page: 12
+    item:
+      material: MUD_BRICK_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 12 slot 29':
+    slot: 29
+    page: 12
+    item:
+      material: MUD_BRICK_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 12 slot 30':
+    slot: 30
+    page: 12
+    item:
+      material: RESIN_BRICKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 12 slot 31':
+    slot: 31
+    page: 12
+    item:
+      material: RESIN_BRICK_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 12 slot 32':
+    slot: 32
+    page: 12
+    item:
+      material: RESIN_BRICK_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 12 slot 33':
+    slot: 33
+    page: 12
+    item:
+      material: RESIN_BRICK_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 12 slot 34':
+    slot: 34
+    page: 12
+    item:
+      material: CHISELED_RESIN_BRICKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 13 slot 10':
+    slot: 10
+    page: 13
+    item:
+      material: SANDSTONE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 13 slot 11':
+    slot: 11
+    page: 13
+    item:
+      material: SANDSTONE_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 13 slot 12':
+    slot: 12
+    page: 13
+    item:
+      material: SANDSTONE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 13 slot 13':
+    slot: 13
+    page: 13
+    item:
+      material: SANDSTONE_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 13 slot 14':
+    slot: 14
+    page: 13
+    item:
+      material: CHISELED_SANDSTONE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 13 slot 15':
+    slot: 15
+    page: 13
+    item:
+      material: SMOOTH_SANDSTONE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 13 slot 16':
+    slot: 16
+    page: 13
+    item:
+      material: SMOOTH_SANDSTONE_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 13 slot 19':
+    slot: 19
+    page: 13
+    item:
+      material: SMOOTH_SANDSTONE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 13 slot 20':
+    slot: 20
+    page: 13
+    item:
+      material: CUT_SANDSTONE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 13 slot 21':
+    slot: 21
+    page: 13
+    item:
+      material: CUT_SANDSTONE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 13 slot 22':
+    slot: 22
+    page: 13
+    item:
+      material: RED_SANDSTONE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 13 slot 23':
+    slot: 23
+    page: 13
+    item:
+      material: RED_SANDSTONE_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 13 slot 24':
+    slot: 24
+    page: 13
+    item:
+      material: RED_SANDSTONE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 13 slot 25':
+    slot: 25
+    page: 13
+    item:
+      material: RED_SANDSTONE_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 13 slot 28':
+    slot: 28
+    page: 13
+    item:
+      material: CHISELED_RED_SANDSTONE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 13 slot 29':
+    slot: 29
+    page: 13
+    item:
+      material: SMOOTH_RED_SANDSTONE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 13 slot 30':
+    slot: 30
+    page: 13
+    item:
+      material: SMOOTH_RED_SANDSTONE_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 13 slot 31':
+    slot: 31
+    page: 13
+    item:
+      material: SMOOTH_RED_SANDSTONE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 13 slot 32':
+    slot: 32
+    page: 13
+    item:
+      material: CUT_RED_SANDSTONE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 13 slot 33':
+    slot: 33
+    page: 13
+    item:
+      material: CUT_RED_SANDSTONE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 13 slot 34':
+    slot: 34
+    page: 13
+    item:
+      material: SEA_LANTERN
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 14 slot 10':
+    slot: 10
+    page: 14
+    item:
+      material: PRISMARINE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 14 slot 11':
+    slot: 11
+    page: 14
+    item:
+      material: PRISMARINE_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 14 slot 12':
+    slot: 12
+    page: 14
+    item:
+      material: PRISMARINE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 14 slot 13':
+    slot: 13
+    page: 14
+    item:
+      material: PRISMARINE_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 14 slot 14':
+    slot: 14
+    page: 14
+    item:
+      material: PRISMARINE_BRICKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 14 slot 15':
+    slot: 15
+    page: 14
+    item:
+      material: PRISMARINE_BRICK_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 14 slot 16':
+    slot: 16
+    page: 14
+    item:
+      material: PRISMARINE_BRICK_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 14 slot 19':
+    slot: 19
+    page: 14
+    item:
+      material: DARK_PRISMARINE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 14 slot 20':
+    slot: 20
+    page: 14
+    item:
+      material: DARK_PRISMARINE_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 14 slot 21':
+    slot: 21
+    page: 14
+    item:
+      material: DARK_PRISMARINE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 14 slot 22':
+    slot: 22
+    page: 14
+    item:
+      material: NETHERRACK
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 14 slot 23':
+    slot: 23
+    page: 14
+    item:
+      material: NETHER_BRICKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 14 slot 24':
+    slot: 24
+    page: 14
+    item:
+      material: CRACKED_NETHER_BRICKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 14 slot 25':
+    slot: 25
+    page: 14
+    item:
+      material: NETHER_BRICK_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 14 slot 28':
+    slot: 28
+    page: 14
+    item:
+      material: NETHER_BRICK_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 14 slot 29':
+    slot: 29
+    page: 14
+    item:
+      material: NETHER_BRICK_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 14 slot 30':
+    slot: 30
+    page: 14
+    item:
+      material: NETHER_BRICK_FENCE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 14 slot 31':
+    slot: 31
+    page: 14
+    item:
+      material: CHISELED_NETHER_BRICKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 14 slot 32':
+    slot: 32
+    page: 14
+    item:
+      material: RED_NETHER_BRICKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 14 slot 33':
+    slot: 33
+    page: 14
+    item:
+      material: RED_NETHER_BRICK_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 14 slot 34':
+    slot: 34
+    page: 14
+    item:
+      material: RED_NETHER_BRICK_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 15 slot 10':
+    slot: 10
+    page: 15
+    item:
+      material: RED_NETHER_BRICK_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 15 slot 11':
+    slot: 11
+    page: 15
+    item:
+      material: BASALT
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 15 slot 12':
+    slot: 12
+    page: 15
+    item:
+      material: SMOOTH_BASALT
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 15 slot 13':
+    slot: 13
+    page: 15
+    item:
+      material: POLISHED_BASALT
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 15 slot 14':
+    slot: 14
+    page: 15
+    item:
+      material: BLACKSTONE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 15 slot 15':
+    slot: 15
+    page: 15
+    item:
+      material: GILDED_BLACKSTONE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 15 slot 16':
+    slot: 16
+    page: 15
+    item:
+      material: BLACKSTONE_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 15 slot 19':
+    slot: 19
+    page: 15
+    item:
+      material: BLACKSTONE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 15 slot 20':
+    slot: 20
+    page: 15
+    item:
+      material: CHISELED_POLISHED_BLACKSTONE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 15 slot 21':
+    slot: 21
+    page: 15
+    item:
+      material: POLISHED_BLACKSTONE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 15 slot 22':
+    slot: 22
+    page: 15
+    item:
+      material: POLISHED_BLACKSTONE_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 15 slot 23':
+    slot: 23
+    page: 15
+    item:
+      material: POLISHED_BLACKSTONE_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 15 slot 24':
+    slot: 24
+    page: 15
+    item:
+      material: POLISHED_BLACKSTONE_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 15 slot 25':
+    slot: 25
+    page: 15
+    item:
+      material: POLISHED_BLACKSTONE_PRESSURE_PLATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 15 slot 28':
+    slot: 28
+    page: 15
+    item:
+      material: POLISHED_BLACKSTONE_BUTTON
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 15 slot 29':
+    slot: 29
+    page: 15
+    item:
+      material: POLISHED_BLACKSTONE_BRICKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 15 slot 30':
+    slot: 30
+    page: 15
+    item:
+      material: CRACKED_POLISHED_BLACKSTONE_BRICKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 15 slot 31':
+    slot: 31
+    page: 15
+    item:
+      material: POLISHED_BLACKSTONE_BRICK_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 15 slot 32':
+    slot: 32
+    page: 15
+    item:
+      material: POLISHED_BLACKSTONE_BRICK_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 15 slot 33':
+    slot: 33
+    page: 15
+    item:
+      material: POLISHED_BLACKSTONE_BRICK_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 15 slot 34':
+    slot: 34
+    page: 15
+    item:
+      material: END_STONE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 16 slot 10':
+    slot: 10
+    page: 16
+    item:
+      material: END_STONE_BRICKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 16 slot 11':
+    slot: 11
+    page: 16
+    item:
+      material: END_STONE_BRICK_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 16 slot 12':
+    slot: 12
+    page: 16
+    item:
+      material: END_STONE_BRICK_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 16 slot 13':
+    slot: 13
+    page: 16
+    item:
+      material: END_STONE_BRICK_WALL
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 16 slot 14':
+    slot: 14
+    page: 16
+    item:
+      material: PURPUR_BLOCK
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 16 slot 15':
+    slot: 15
+    page: 16
+    item:
+      material: PURPUR_PILLAR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 16 slot 16':
+    slot: 16
+    page: 16
+    item:
+      material: PURPUR_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 16 slot 19':
+    slot: 19
+    page: 16
+    item:
+      material: PURPUR_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 16 slot 20':
+    slot: 20
+    page: 16
+    item:
+      material: COAL_BLOCK
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 16 slot 21':
+    slot: 21
+    page: 16
+    item:
+      material: IRON_BLOCK
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 16 slot 22':
+    slot: 22
+    page: 16
+    item:
+      material: IRON_BARS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 16 slot 23':
+    slot: 23
+    page: 16
+    item:
+      material: IRON_DOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 16 slot 24':
+    slot: 24
+    page: 16
+    item:
+      material: IRON_TRAPDOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 16 slot 25':
+    slot: 25
+    page: 16
+    item:
+      material: HEAVY_WEIGHTED_PRESSURE_PLATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 16 slot 28':
+    slot: 28
+    page: 16
+    item:
+      material: CHAIN
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 16 slot 29':
+    slot: 29
+    page: 16
+    item:
+      material: GOLD_BLOCK
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 16 slot 30':
+    slot: 30
+    page: 16
+    item:
+      material: LIGHT_WEIGHTED_PRESSURE_PLATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 16 slot 31':
+    slot: 31
+    page: 16
+    item:
+      material: REDSTONE_BLOCK
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 16 slot 32':
+    slot: 32
+    page: 16
+    item:
+      material: EMERALD_BLOCK
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 16 slot 33':
+    slot: 33
+    page: 16
+    item:
+      material: LAPIS_BLOCK
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 16 slot 34':
+    slot: 34
+    page: 16
+    item:
+      material: DIAMOND_BLOCK
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 17 slot 10':
+    slot: 10
+    page: 17
+    item:
+      material: NETHERITE_BLOCK
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 17 slot 11':
+    slot: 11
+    page: 17
+    item:
+      material: QUARTZ_BLOCK
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 17 slot 12':
+    slot: 12
+    page: 17
+    item:
+      material: QUARTZ_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 17 slot 13':
+    slot: 13
+    page: 17
+    item:
+      material: QUARTZ_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 17 slot 14':
+    slot: 14
+    page: 17
+    item:
+      material: CHISELED_QUARTZ_BLOCK
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 17 slot 15':
+    slot: 15
+    page: 17
+    item:
+      material: QUARTZ_BRICKS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 17 slot 16':
+    slot: 16
+    page: 17
+    item:
+      material: QUARTZ_PILLAR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 17 slot 19':
+    slot: 19
+    page: 17
+    item:
+      material: SMOOTH_QUARTZ
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 17 slot 20':
+    slot: 20
+    page: 17
+    item:
+      material: SMOOTH_QUARTZ_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 17 slot 21':
+    slot: 21
+    page: 17
+    item:
+      material: SMOOTH_QUARTZ_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 17 slot 22':
+    slot: 22
+    page: 17
+    item:
+      material: AMETHYST_BLOCK
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 17 slot 23':
+    slot: 23
+    page: 17
+    item:
+      material: COPPER_BLOCK
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 17 slot 24':
+    slot: 24
+    page: 17
+    item:
+      material: CHISELED_COPPER
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 17 slot 25':
+    slot: 25
+    page: 17
+    item:
+      material: COPPER_GRATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 17 slot 28':
+    slot: 28
+    page: 17
+    item:
+      material: CUT_COPPER
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 17 slot 29':
+    slot: 29
+    page: 17
+    item:
+      material: CUT_COPPER_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 17 slot 30':
+    slot: 30
+    page: 17
+    item:
+      material: CUT_COPPER_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 17 slot 31':
+    slot: 31
+    page: 17
+    item:
+      material: COPPER_DOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 17 slot 32':
+    slot: 32
+    page: 17
+    item:
+      material: COPPER_TRAPDOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 17 slot 33':
+    slot: 33
+    page: 17
+    item:
+      material: COPPER_BULB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 17 slot 34':
+    slot: 34
+    page: 17
+    item:
+      material: EXPOSED_COPPER
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 18 slot 10':
+    slot: 10
+    page: 18
+    item:
+      material: EXPOSED_CHISELED_COPPER
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 18 slot 11':
+    slot: 11
+    page: 18
+    item:
+      material: EXPOSED_COPPER_GRATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 18 slot 12':
+    slot: 12
+    page: 18
+    item:
+      material: EXPOSED_CUT_COPPER
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 18 slot 13':
+    slot: 13
+    page: 18
+    item:
+      material: EXPOSED_CUT_COPPER_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 18 slot 14':
+    slot: 14
+    page: 18
+    item:
+      material: EXPOSED_CUT_COPPER_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 18 slot 15':
+    slot: 15
+    page: 18
+    item:
+      material: EXPOSED_COPPER_DOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 18 slot 16':
+    slot: 16
+    page: 18
+    item:
+      material: EXPOSED_COPPER_TRAPDOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 18 slot 19':
+    slot: 19
+    page: 18
+    item:
+      material: EXPOSED_COPPER_BULB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 18 slot 20':
+    slot: 20
+    page: 18
+    item:
+      material: WEATHERED_COPPER
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 18 slot 21':
+    slot: 21
+    page: 18
+    item:
+      material: WEATHERED_CHISELED_COPPER
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 18 slot 22':
+    slot: 22
+    page: 18
+    item:
+      material: WEATHERED_COPPER_GRATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 18 slot 23':
+    slot: 23
+    page: 18
+    item:
+      material: WEATHERED_CUT_COPPER
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 18 slot 24':
+    slot: 24
+    page: 18
+    item:
+      material: WEATHERED_CUT_COPPER_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 18 slot 25':
+    slot: 25
+    page: 18
+    item:
+      material: WEATHERED_CUT_COPPER_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 18 slot 28':
+    slot: 28
+    page: 18
+    item:
+      material: WEATHERED_COPPER_DOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 18 slot 29':
+    slot: 29
+    page: 18
+    item:
+      material: WEATHERED_COPPER_TRAPDOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 18 slot 30':
+    slot: 30
+    page: 18
+    item:
+      material: WEATHERED_COPPER_BULB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 18 slot 31':
+    slot: 31
+    page: 18
+    item:
+      material: OXIDIZED_COPPER
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 18 slot 32':
+    slot: 32
+    page: 18
+    item:
+      material: OXIDIZED_CHISELED_COPPER
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 18 slot 33':
+    slot: 33
+    page: 18
+    item:
+      material: OXIDIZED_COPPER_GRATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 18 slot 34':
+    slot: 34
+    page: 18
+    item:
+      material: OXIDIZED_CUT_COPPER
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 19 slot 10':
+    slot: 10
+    page: 19
+    item:
+      material: OXIDIZED_CUT_COPPER_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 19 slot 11':
+    slot: 11
+    page: 19
+    item:
+      material: OXIDIZED_CUT_COPPER_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 19 slot 12':
+    slot: 12
+    page: 19
+    item:
+      material: OXIDIZED_COPPER_DOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 19 slot 13':
+    slot: 13
+    page: 19
+    item:
+      material: OXIDIZED_COPPER_TRAPDOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 19 slot 14':
+    slot: 14
+    page: 19
+    item:
+      material: OXIDIZED_COPPER_BULB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 19 slot 15':
+    slot: 15
+    page: 19
+    item:
+      material: WAXED_COPPER_BLOCK
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 19 slot 16':
+    slot: 16
+    page: 19
+    item:
+      material: WAXED_CHISELED_COPPER
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 19 slot 19':
+    slot: 19
+    page: 19
+    item:
+      material: WAXED_COPPER_GRATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 19 slot 20':
+    slot: 20
+    page: 19
+    item:
+      material: WAXED_CUT_COPPER
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 19 slot 21':
+    slot: 21
+    page: 19
+    item:
+      material: WAXED_CUT_COPPER_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 19 slot 22':
+    slot: 22
+    page: 19
+    item:
+      material: WAXED_CUT_COPPER_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 19 slot 23':
+    slot: 23
+    page: 19
+    item:
+      material: WAXED_COPPER_DOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 19 slot 24':
+    slot: 24
+    page: 19
+    item:
+      material: WAXED_COPPER_TRAPDOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 19 slot 25':
+    slot: 25
+    page: 19
+    item:
+      material: WAXED_COPPER_BULB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 19 slot 28':
+    slot: 28
+    page: 19
+    item:
+      material: WAXED_EXPOSED_COPPER
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 19 slot 29':
+    slot: 29
+    page: 19
+    item:
+      material: WAXED_EXPOSED_CHISELED_COPPER
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 19 slot 30':
+    slot: 30
+    page: 19
+    item:
+      material: WAXED_EXPOSED_COPPER_GRATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 19 slot 31':
+    slot: 31
+    page: 19
+    item:
+      material: WAXED_EXPOSED_CUT_COPPER
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 19 slot 32':
+    slot: 32
+    page: 19
+    item:
+      material: WAXED_EXPOSED_CUT_COPPER_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 19 slot 33':
+    slot: 33
+    page: 19
+    item:
+      material: WAXED_EXPOSED_CUT_COPPER_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 19 slot 34':
+    slot: 34
+    page: 19
+    item:
+      material: WAXED_EXPOSED_COPPER_DOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 20 slot 10':
+    slot: 10
+    page: 20
+    item:
+      material: WAXED_EXPOSED_COPPER_TRAPDOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 20 slot 11':
+    slot: 11
+    page: 20
+    item:
+      material: WAXED_EXPOSED_COPPER_BULB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 20 slot 12':
+    slot: 12
+    page: 20
+    item:
+      material: WAXED_WEATHERED_COPPER
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 20 slot 13':
+    slot: 13
+    page: 20
+    item:
+      material: WAXED_WEATHERED_CHISELED_COPPER
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 20 slot 14':
+    slot: 14
+    page: 20
+    item:
+      material: WAXED_WEATHERED_COPPER_GRATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 20 slot 15':
+    slot: 15
+    page: 20
+    item:
+      material: WAXED_WEATHERED_CUT_COPPER
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 20 slot 16':
+    slot: 16
+    page: 20
+    item:
+      material: WAXED_WEATHERED_CUT_COPPER_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 20 slot 19':
+    slot: 19
+    page: 20
+    item:
+      material: WAXED_WEATHERED_CUT_COPPER_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 20 slot 20':
+    slot: 20
+    page: 20
+    item:
+      material: WAXED_WEATHERED_COPPER_DOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 20 slot 21':
+    slot: 21
+    page: 20
+    item:
+      material: WAXED_WEATHERED_COPPER_TRAPDOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 20 slot 22':
+    slot: 22
+    page: 20
+    item:
+      material: WAXED_WEATHERED_COPPER_BULB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 20 slot 23':
+    slot: 23
+    page: 20
+    item:
+      material: WAXED_OXIDIZED_COPPER
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 20 slot 24':
+    slot: 24
+    page: 20
+    item:
+      material: WAXED_OXIDIZED_CHISELED_COPPER
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 20 slot 25':
+    slot: 25
+    page: 20
+    item:
+      material: WAXED_OXIDIZED_COPPER_GRATE
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 20 slot 28':
+    slot: 28
+    page: 20
+    item:
+      material: WAXED_OXIDIZED_CUT_COPPER
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 20 slot 29':
+    slot: 29
+    page: 20
+    item:
+      material: WAXED_OXIDIZED_CUT_COPPER_STAIRS
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 20 slot 30':
+    slot: 30
+    page: 20
+    item:
+      material: WAXED_OXIDIZED_CUT_COPPER_SLAB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 20 slot 31':
+    slot: 31
+    page: 20
+    item:
+      material: WAXED_OXIDIZED_COPPER_DOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 20 slot 32':
+    slot: 32
+    page: 20
+    item:
+      material: WAXED_OXIDIZED_COPPER_TRAPDOOR
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+  'page 20 slot 33':
+    slot: 33
+    page: 20
+    item:
+      material: WAXED_OXIDIZED_COPPER_BULB
+      lore:
+        - ' '
+        - '<aqua>Platzieren<dark_gray>:'
+        - '<gray>- <white>1<yellow>⛁'
+        - '<gray>- <white>1<dark_aqua>●'
+        - ' '
+# --------------------------------------------------------------------NAVIGATION----------------------------------------------------------------------  
+
+  previous:
+    type: PREVIOUS
+    is-permanent: true
+    slot: 39
+    item:
+      material: PAPER
+      name: "&c⤾ vorherige Seite"
+    else: #Displays another button if there is no next page.
+      type: INVENTORY
+      page: 1
+      inventory: "architekt_übersicht"
+      plugin: "zMenu"
+      item:
+        material: PAPER
+        name: "&c⤾ zur Architekt Übersicht"
+
+  'aktuelle Seite':
+    slot: 40
+    is-permanent: true
+    item:
+      material: BOOK
+      name: '&eSeite %zmenu_player_page%'
+
+  next:
+    type: NEXT
+    is-permanent: true
+    slot: 41
+    item:
+      material: PAPER
+      name: "&a⤿ nächste Seite"
+    else: #Displays another button if there is no next page.
+      item:
+        material: GRAY_STAINED_GLASS_PANE
+        name: " "
